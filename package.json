@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "gh-deploy": "bin/astro-gh-deploy.sh"
   },
   "devDependencies": {
     "@fontsource/source-sans-pro": "^4.5.10",
