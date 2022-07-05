@@ -8,6 +8,9 @@ body {
 main > h1 {
   color: var(--red-1);
   text-transform: uppercase;
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: 400;
   margin-bottom: 1em;
   padding-bottom: 0.125em;
   position: relative;
