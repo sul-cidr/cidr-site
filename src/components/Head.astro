@@ -1,0 +1,27 @@
+---
+import { execSync } from "node:child_process";
+
+import siteConfig from "../../site-config.json";
+
+import "../styles/styles.css";
+
+const commit = execSync("git rev-parse --short HEAD").toString().trim();
+const datetime = new Date().toISOString();
+
+let { title, description = siteConfig.defaultDescription } = Astro.props;
+
+title = title ? `${title} :: ${siteConfig.baseTitle}` : siteConfig.baseTitle;
+---
+
+<head prefix="dcterms: http://purl.org/dc/terms/#">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <meta name="description" property="og:description" content={description} />
+  <title>{title}</title>
+
+  <meta name="version" content={commit} />
+  <meta name="dcterms.modified" content={datetime} />
+
+  <link rel="icon" type="image/x-icon" href={`${Astro.site.pathname}favicon.ico`} />
+</head>

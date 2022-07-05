@@ -1,0 +1,8 @@
+---
+layout: ../layouts/base.astro
+---
+
+
+The Center for Interdisciplinary Digital Research (CIDR) enables digital research and teaching to encourage and inspire innovative scholarship throughout the University. We are a team of humanists and social scientists within the Stanford University Libraries who design and develop new tools and methods, and integrate technology and information resources, to promote scholarship. Our expertise in data discovery, data creation, data management and analytical tools supports the generation and dissemination of new knowledge.
+
+contact-cidr@stanford.edu
