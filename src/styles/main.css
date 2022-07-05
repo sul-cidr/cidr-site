@@ -3,6 +3,7 @@ body {
   background-color: var(--background);
   font-weight: 200;
   font-size: 18px;
+  color: var(--black-1);
 }
 
 main > h1 {
