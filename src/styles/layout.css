@@ -6,8 +6,7 @@ body {
 
 main {
   flex-grow: 1;
-  max-width: var(--wrap);
-  width: 1000px;
+  width: var(--wrap);
 }
 
 /* add margin if scroll bar not visible

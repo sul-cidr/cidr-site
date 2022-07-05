@@ -4,7 +4,7 @@
 
   --black-1: #333;
 
-  --wrap: 90vw;
+  --wrap: min(1000px, 90vw);
 }
 
 @media (--lg-n-above) {
