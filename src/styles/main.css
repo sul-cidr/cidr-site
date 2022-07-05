@@ -1,0 +1,34 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--background);
+  font-weight: 200;
+  font-size: 18px;
+}
+
+main > h1 {
+  color: var(--red-1);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  padding-bottom: 0.125em;
+  position: relative;
+  display: inline-block;
+  font-weight: 300;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background-color: var(--red-1);
+    left: 0;
+  }
+}
+
+main {
+  font-size: 1.4em;
+}
+
+p + p {
+  margin-top: 1em;
+}

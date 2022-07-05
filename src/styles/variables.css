@@ -1,0 +1,14 @@
+:root {
+  --background: #eff0f1;
+  --red-1: #8c1515;
+
+  --black-1: #333;
+
+  --wrap: 90vw;
+}
+
+@media (--lg-n-above) {
+  html {
+    --wrap: 70vw;
+  }
+}

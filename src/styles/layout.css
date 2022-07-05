@@ -1,0 +1,23 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  max-width: var(--wrap);
+  width: 1000px;
+}
+
+/* add margin if scroll bar not visible
+   Note: leaving space for a scroll bar can result in obviously uneven margins
+   on smaller screens when there is no scroll bar.  This is potentially an issue
+   on environments without overlay scrollbars and very narrow viewports, but 
+   such environments are very uncommon and in my contrived examples behaviour
+   is entirely acceptable imo. */
+body {
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+  overflow-x: hidden;
+}

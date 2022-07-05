@@ -22,7 +22,7 @@ const links = [
   nav {
     align-items: center;
     display: flex;
-    gap: 1em;
+    gap: 2em;
     justify-content: center;
   }
 
@@ -30,17 +30,13 @@ const links = [
     display: inline-block;
     position: relative;
     text-decoration: none;
+    color: var(--red-1);
+    font-size: 1.4em;
 
     &[href] {
 
-      &:focus:after,
-      &:hover:after {
-        left: 0%;
-        width: 100%;
-      }
-
       &:after {
-        background-color: red;
+        background-color: var(--red-1);
         bottom: -2px;
         content: "";
         height: 2px;
@@ -51,6 +47,32 @@ const links = [
         transition-property: width, left;
         transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
         width: 0%;
+      }
+
+      &:focus,
+      &:hover {
+        color: var(--black-1);
+
+        &:after {
+          left: 0%;
+          width: 100%;
+
+        }
+      }
+    }
+
+    &:not([href]) {
+      color: var(--black-1);
+
+      &:after {
+        background-color: var(--red-1);
+        bottom: -2px;
+        content: "";
+        height: 2px;
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        left: 0%;
       }
     }
 
