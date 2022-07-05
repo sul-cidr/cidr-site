@@ -1,0 +1,55 @@
+---
+const links = [
+  { label: "Developers", url: "developers/" },
+  { label: "ATS Program", url: "ats-program/" },
+  { label: "Projects", url: "projects/" },
+  { label: "Workshops", url: "workshops/" },
+  { label: "Consulting", url: "consulting/" },
+  { label: "Data", url: "data/" },
+];
+---
+
+<nav>
+  { links.map(({ label, url }) => (
+  <a class={Astro.canonicalURL.pathname===Astro.site.pathname + url ? "active" : null}
+    href={Astro.canonicalURL.pathname===Astro.site.pathname + url ? null : Astro.site.pathname + url }>
+    { label }
+  </a>
+  )) }
+</nav>
+
+<style>
+  nav {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+
+    &:focus:after,
+    &:hover:after {
+      left: 0%;
+      width: 100%;
+    }
+
+    &:after {
+      background-color: red;
+      bottom: -2px;
+      content: "";
+      height: 2px;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      transition-duration: 400ms;
+      transition-property: width, left;
+      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+      width: 0%;
+    }
+
+  }
+</style>

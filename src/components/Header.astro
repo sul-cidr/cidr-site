@@ -1,3 +1,20 @@
+---
+import cidrLogo from "../assets/cidr.trsp.300x176.png";
+
+import Nav from "./Nav.astro";
+---
+
 <header role="banner">
-  <h1><a href={Astro.site.pathname}>CIDR</a></h1>
+  <h1>
+    <a href={Astro.site.pathname}>
+      <img src={cidrLogo} alt="Center for Interdisciplinary Digital Research" />
+    </a>
+  </h1>
+  <Nav />
 </header>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
