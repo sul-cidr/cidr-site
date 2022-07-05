@@ -31,24 +31,27 @@ const links = [
     position: relative;
     text-decoration: none;
 
-    &:focus:after,
-    &:hover:after {
-      left: 0%;
-      width: 100%;
-    }
+    &[href] {
 
-    &:after {
-      background-color: red;
-      bottom: -2px;
-      content: "";
-      height: 2px;
-      left: 50%;
-      pointer-events: none;
-      position: absolute;
-      transition-duration: 400ms;
-      transition-property: width, left;
-      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-      width: 0%;
+      &:focus:after,
+      &:hover:after {
+        left: 0%;
+        width: 100%;
+      }
+
+      &:after {
+        background-color: red;
+        bottom: -2px;
+        content: "";
+        height: 2px;
+        left: 50%;
+        pointer-events: none;
+        position: absolute;
+        transition-duration: 400ms;
+        transition-property: width, left;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        width: 0%;
+      }
     }
 
   }
