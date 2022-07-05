@@ -9,7 +9,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.63"
+    "@fontsource/source-sans-pro": "^4.5.10",
+    "astro": "^1.0.0-beta.63",
     "autoprefixer": "^10.4.7",
     "postcss-nested": "^5.0.6",
     "prettier-plugin-astro": "^0.1.1"
