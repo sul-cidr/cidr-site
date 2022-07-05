@@ -11,10 +11,12 @@ main > h1 {
   display: inline-block;
   font-size: 1.4em;
   font-weight: 400;
+  left: 50%;
   margin-bottom: 1em;
   padding-bottom: 0.125em;
   position: relative;
   text-transform: uppercase;
+  transform: translateX(-50%);
 
   &:after {
     background-color: var(--red-1);
