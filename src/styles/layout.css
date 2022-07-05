@@ -2,6 +2,8 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 4em;
+  padding: 1em 0;
 }
 
 main {
@@ -10,6 +12,8 @@ main {
   flex-direction: column;
   flex-grow: 1;
   width: var(--wrap);
+  display: flex;
+  flex-direction: column;
 }
 
 /* add margin if scroll bar not visible
