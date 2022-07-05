@@ -1,24 +1,46 @@
 ---
-import cidrLogo from "../assets/cidr.trsp.300x176.png";
+import cidrLogo from "../assets/cidr.trsp.no-text.280x140.png";
 
 import Nav from "./Nav.astro";
 ---
 
 <header role="banner">
-  <a href={Astro.site.pathname}>
-    <img src={cidrLogo} alt="Center for Interdisciplinary Digital Research" />
-  </a>
+  <div>
+    <a href={Astro.site.pathname}>
+      <img src={cidrLogo} alt="Center for Interdisciplinary Digital Research" />
+    </a>
+    <span>Center for Interdisciplinary Digital Research</span>
+  </div>
   <Nav />
 </header>
 
 <style>
   header {
-    text-align: center;
-    width: 100vw;
     background-color: white;
-    margin-top: 1em;
-    margin-bottom: 2em;
     box-shadow: 0 0 4px 4px rgb(0 0 0 / 40%);
-    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    width: 100vw;
+  }
+
+  div {
+    align-items: flex-end;
+    display: flex;
+    gap: 1em;
+    margin: 0 auto;
+    width: var(--wrap);
+  }
+
+  span {
+    border-style: solid;
+    border-width: 1px 0;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding: 10px;
   }
 </style>
