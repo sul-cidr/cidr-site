@@ -16,7 +16,7 @@ import Nav from "./Nav.astro";
 
 <style>
   header {
-    background-color: white;
+    background-color: var(--fog-light);
     box-shadow: 0 0 4px 4px rgb(0 0 0 / 40%);
     display: flex;
     flex-direction: column;
@@ -41,5 +41,10 @@ import Nav from "./Nav.astro";
     font-weight: 600;
     margin-bottom: 15px;
     padding: 10px;
+    text-shadow: 0 0 6px white;
+  }
+
+  img {
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, .4))
   }
 </style>

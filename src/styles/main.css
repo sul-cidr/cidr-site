@@ -1,13 +1,13 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
-  background-color: var(--background);
+  background-color: var(--fog);
   font-weight: 200;
   font-size: 18px;
-  color: var(--black-1);
+  color: var(--black-100);
 }
 
 main > h1 {
-  color: var(--red-1);
+  color: var(--cardinal);
   display: inline-block;
   font-size: 1.4em;
   font-weight: 400;
@@ -19,7 +19,7 @@ main > h1 {
   transform: translateX(-50%);
 
   &:after {
-    background-color: var(--red-1);
+    background-color: var(--cardinal);
     bottom: -2px;
     content: "";
     height: 1px;
