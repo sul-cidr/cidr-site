@@ -1,5 +1,6 @@
 ---
 layout: ../layouts/base.astro
+title: Projects
 ---
 
 # Projects @ CIDR

@@ -1,5 +1,6 @@
 ---
 layout: ../layouts/base.astro
+title: Workshops
 ---
 
 # Workshops @ CIDR
