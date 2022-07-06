@@ -19,12 +19,15 @@ main > h1 {
   transform: translateX(-50%);
 
   &:after {
+    animation: 400ms cubic-bezier(0.25, 0.8, 0.25, 1) 1 headerUnderline;
     background-color: var(--cardinal);
     bottom: -2px;
     content: "";
     height: 1px;
     left: 0;
+    left: 0%;
     position: absolute;
+    width: 100%;
     width: 100%;
   }
 }
@@ -35,4 +38,11 @@ main {
 
 p + p {
   margin-top: 1em;
+}
+
+@keyframes headerUnderline {
+  0% {
+    left: 50%;
+    width: 0%;
+  }
 }
