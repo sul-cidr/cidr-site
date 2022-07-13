@@ -4,6 +4,7 @@ import { execSync } from "node:child_process";
 import siteConfig from "../../site-config.json";
 
 import "../styles/styles.css";
+import cidrLogo from "../assets/cidr.trsp.no-text.280x140.png";
 
 const commit = execSync("git rev-parse --short HEAD").toString().trim();
 const datetime = new Date().toISOString();
@@ -24,4 +25,5 @@ title = title ? `${title} :: ${siteConfig.baseTitle}` : siteConfig.baseTitle;
   <meta name="dcterms.modified" content={datetime} />
 
   <link rel="icon" type="image/x-icon" href={`${Astro.site.pathname}favicon.ico`} />
+  <link rel="preload" href={cidrLogo} as="image" />
 </head>
