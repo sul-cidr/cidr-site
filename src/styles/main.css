@@ -34,6 +34,16 @@ main > h1 {
 
 main {
   font-size: 1.4em;
+
+  a {
+    color: #00505c;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 p + p {
