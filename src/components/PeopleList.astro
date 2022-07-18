@@ -1,0 +1,58 @@
+---
+import people from "../data/people.yaml";
+---
+
+{people.sort((a, b) => a.sort.localeCompare(b.sort)).map(person => (
+<section>
+  <header>
+    <h2>{person.name}</h2>
+    <span>{person.title}</span>
+  </header>
+  <article>{person.text}</article>
+</section>
+))}
+
+
+<style>
+  section+section {
+    margin-top: 2em;
+  }
+
+  header {
+    text-align: right;
+
+    h2 {
+      color: var(--cardinal);
+      font-size: 2rem;
+      font-variant: petite-caps;
+      font-weight: 400;
+    }
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  article {
+    font-size: smaller;
+    text-align: justify;
+
+    img {
+      float: left;
+      margin: 0 1em 0.5em 0;
+    }
+  }
+
+  section:nth-child(even) {
+    header {
+      text-align: left;
+    }
+
+    article {
+      img {
+        float: right;
+        margin: 0 0 0.5em 1em;
+      }
+    }
+  }
+</style>
