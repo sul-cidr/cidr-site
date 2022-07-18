@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@fontsource/source-sans-pro": "^4.5.10",
+    "@rollup/plugin-yaml": "^3.1.0",
     "astro": "^1.0.0-beta.63",
     "autoprefixer": "^10.4.7",
     "postcss-nested": "^5.0.6",
