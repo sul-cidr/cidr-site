@@ -28,8 +28,34 @@ import dash from "../assets/project_images/digital-analysis-of-syriac-handwritin
 
 
 <style>
-  section+section {
+  section {
     margin-top: 2em;
+    position: relative;
+    transition: transform 0.1s ease-in-out;
+
+    &::before {
+      border-radius: 0.25em;
+      content: "";
+      display: block;
+      height: calc(100% + 1.5em);
+      left: -1em;
+      position: absolute;
+      top: -0.5em;
+      transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
+      width: calc(100% + 2em);
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:hover::before {
+      background-color: var(--fog-light);
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+      transition: box-shadow 0.1s ease-in-out, background-color 0.4s ease-in-out;
+    }
+
   }
 
 
@@ -43,6 +69,7 @@ import dash from "../assets/project_images/digital-analysis-of-syriac-handwritin
 
   article {
     font-size: smaller;
+    overflow: hidden;
     text-align: justify;
 
     img {
