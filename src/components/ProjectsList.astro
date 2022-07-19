@@ -4,16 +4,33 @@ import projects from "../data/projects.yaml";
 
 {projects.map(async (project) => {
   const { default: image } = await import(project.image)
+  let vid
+  if (project.video) {
+    ;({ default: vid } = await import(project.video))
+  }
   return (
     <section>
       <header>{project.title}</header>
       <article>
-        <img src={image} alt={project.title} />
+        {project.video ? (
+          <video src={vid} loop muted />
+        ) : (
+          <img src={image} alt={project.title} />
+        )}
         {project.text}
       </article>
     </section>
   )
 })}
+
+<script>
+  document.querySelectorAll("section").forEach((section) => {
+    const vid = section.querySelector("video");
+    if (!vid) return;
+    section.addEventListener("mouseover", vid.play.bind(vid));
+    section.addEventListener("mouseout", vid.pause.bind(vid));
+  });
+</script>
 
 <style>
   section {
@@ -58,7 +75,8 @@ import projects from "../data/projects.yaml";
     overflow: hidden;
     text-align: justify;
 
-    img {
+    img,
+    video {
       float: left;
       margin: 0 1em 0.5em 0;
     }
