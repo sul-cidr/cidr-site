@@ -3,19 +3,19 @@ import projects from "../data/projects.yaml";
 ---
 
 {projects.map(async (project) => {
-  const { default: image } = await import(project.image)
-  let vid
-  if (project.video) {
-    ;({ default: vid } = await import(project.video))
-  }
+  // const { default: image } = await import(project.image)
+  // let vid
+  // if (project.video) {
+  //   ;({ default: vid } = await import(project.video))
+  // }
   return (
     <section>
       <header>{project.title}</header>
       <article>
         {project.video ? (
-          <video src={vid} loop muted />
+          <video src={Astro.site.pathname + project.video} loop muted />
         ) : (
-          <img src={image} alt={project.title} />
+          <img src={Astro.site.pathname + project.image} alt={project.title} />
         )}
         {project.text}
       </article>
