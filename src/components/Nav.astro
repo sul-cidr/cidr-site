@@ -1,5 +1,7 @@
 ---
+import Icon from "./Icon.astro";
 const links = [
+  { label: "Home", icon: "home", url: "" },
   { label: "Developers", url: "developers/" },
   { label: "ATS Program", url: "ats-program/" },
   { label: "Projects", url: "projects/" },
@@ -10,12 +12,22 @@ const links = [
 ---
 
 <nav>
-  { links.map(({ label, url }) => (
-  <a class={Astro.canonicalURL.pathname===Astro.site.pathname + url ? "active" : null}
-    href={Astro.canonicalURL.pathname===Astro.site.pathname + url ? null : Astro.site.pathname + url }>
-    { label }
-  </a>
-  )) }
+  {links.map(({ label, url, icon = false }) => (
+    <a
+      class={
+        Astro.canonicalURL.pathname === Astro.site.pathname + url
+          ? "active"
+          : null
+      }
+      href={
+        Astro.canonicalURL.pathname === Astro.site.pathname + url
+          ? null
+          : Astro.site.pathname + url
+      }
+    >
+      {icon ? <Icon name={icon} /> : label}
+    </a>
+  ))}
 </nav>
 
 <style>
@@ -34,7 +46,6 @@ const links = [
     font-size: 1.4em;
 
     &[href] {
-
       &:after {
         background-color: var(--cardinal);
         bottom: -1px;
@@ -75,5 +86,9 @@ const links = [
       }
     }
 
+    :global(svg) {
+      transform: translateY(4px);
+      vertical-align: baseline;
+    }
   }
 </style>
