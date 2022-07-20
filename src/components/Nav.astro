@@ -24,6 +24,7 @@ const links = [
           ? null
           : Astro.site.pathname + url
       }
+      aria-label={icon ? label : null}
     >
       {icon ? <Icon name={icon} /> : label}
     </a>
