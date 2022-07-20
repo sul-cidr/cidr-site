@@ -37,12 +37,16 @@ main {
 
   a {
     color: #00505c;
-    font-weight: 400;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
+      text-decoration-thickness: 1px;
     }
+  }
+
+  strong {
+    font-weight: 400;
   }
 }
 
