@@ -1,21 +1,38 @@
 ---
 import people from "../data/people.yaml";
+
+// This whole shenanigans is required to use dynamic imports in the SSR/build step.
+const images = import.meta.glob("../assets/people/*");
+for (const person of people) {
+  const { default: imagePath } = await (
+    await images[`../assets/${person.image}`]
+  )();
+  person.imagePath = imagePath;
+}
 ---
 
-{people.sort((a, b) => a.sort.localeCompare(b.sort)).map(person => (
-<section>
-  <header>
-    <h2>{person.name}</h2>
-    <span>{person.title}</span>
-  </header>
-  <article>{person.text}</article>
-</section>
-))}
-
+{people
+  .sort((a, b) => a.sort.localeCompare(b.sort))
+  .map((person) => (
+    <section>
+      <header>
+        <h2>{person.name}</h2>
+        <span>{person.title}</span>
+      </header>
+      <article>{person.text}</article>
+      <img src={person.imagePath} alt={person.name} />
+    </section>
+  ))}
 
 <style>
-  section+section {
-    margin-top: 2em;
+  section {
+    display: grid;
+    grid-template-areas: "header image" "text image";
+    gap: 0 1em;
+
+    & + section {
+      margin-top: 2em;
+    }
   }
 
   header {
@@ -36,23 +53,22 @@ import people from "../data/people.yaml";
   article {
     font-size: smaller;
     text-align: justify;
+  }
 
-    img {
-      float: left;
-      margin: 0 1em 0.5em 0;
-    }
+  img {
+    border: 2px solid var(--cardinal);
+    border-radius: 0.25em;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    grid-area: image;
+    margin-top: 0.4em;
+    padding: 2px;
   }
 
   section:nth-child(even) {
+    grid-template-areas: "image header" "image text";
+
     header {
       text-align: left;
-    }
-
-    article {
-      img {
-        float: right;
-        margin: 0 0 0.5em 1em;
-      }
     }
   }
 </style>

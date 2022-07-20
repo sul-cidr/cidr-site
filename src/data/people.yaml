@@ -1,29 +1,34 @@
 - name: Alix Keener
   sort: Keener
   title: Digital Scholarship Coordinator
+  image: people/alix_keener.jpg
   text: |
     Based jointly in CIDR and in the Center for Spatial and Textual Analysis (CESTA), Alix specializes in working with scholars to ensure their digital scholarship is sustainable and responsibly maintained for the foreseeable future. She also manages and develops the Libraries’ digital humanities collection.
 
 - name: Quinn Dombrowski
   sort: Dombrowski
   title: DLCL Academic Technology Specialist
+  image: people/quinn_dombrowski.jpg
   text: |
     Quinn specializes in non-English data and natural-language processing in Python. For almost 20 years, Quinn has regularly scanned and digitized texts in a variety of languages, and often consults on issues related to OCR (optical character recognition, for printed texts) and HTR (handwritten text recognition), and metadata creation for text corpora.
 
 - name: Kate Barron
   sort: Barron
   title: Research Data Curator
+  image: people/kate_barron.jpg
   text: |
     As a Research Data Curator in the Center for Interdisciplinary Digital Research (CIDR), Kate helps preserve and document data that the library has acquired. Her goal is to ensure that the library's data collections are discoverable and reusable by the university community. Kate specializes in the curation and management of social science and humanities data.
 
 - name: Peter Broadwell
   sort: Broadwell
   title: Digital Scholarship Research Developer
+  image: people/peter_broadwell.jpg
   text: |
     Part of the CIDR developer team, Peter helps to build scholarly resources through the application of machine learning, web-based visualization, and other methods of digital analysis to complex cultural, historical and sociological data.
 
 - name: Claudia Engel
   sort: Engel
   title: Anthropology Academic Technology Specialist
+  image: people/claudia_engel.jpg
   text: |
     Claudia Engel collaborates with students and faculty on digital research projects in the Anthropology Department, where she also has a lecturer appointment and teaches courses on GIS and Digital Methods.
