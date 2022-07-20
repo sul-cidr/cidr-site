@@ -28,7 +28,7 @@ for (const person of people) {
   section {
     display: grid;
     grid-template-areas: "header image" "text image";
-    gap: 0 1em;
+    gap: 0.5em 1em;
 
     & + section {
       margin-top: 2em;
@@ -51,7 +51,9 @@ for (const person of people) {
   }
 
   article {
+    border-top: 1px solid var(--cardinal);
     font-size: smaller;
+    padding-top: 0.5em;
     text-align: justify;
   }
 
