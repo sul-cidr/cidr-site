@@ -21,6 +21,8 @@ import Nav from "./Nav.astro";
 
 <style>
   header {
+    --sticky-offset: 240px;
+
     background-color: var(--fog-light);
     box-shadow: 0 0 4px 4px rgb(0 0 0 / 40%);
     display: flex;
@@ -29,8 +31,9 @@ import Nav from "./Nav.astro";
     padding-bottom: 1em;
     padding-top: 0.5em;
     width: 100vw;
+    overflow-x: hidden;
     position: sticky;
-    top: calc(-147px - 0.5em);
+    top: calc(0px - var(--sticky-offset) - 0.5em);
     z-index: 2;
   }
 
@@ -67,9 +70,27 @@ import Nav from "./Nav.astro";
   }
 
   @media screen and (min-width: 1100px) {
+    header {
+      --sticky-offset: 147px;
+    }
+
     div {
       align-items: flex-end;
       flex-direction: row;
     }
   }
 </style>
+
+<script>
+  // if javascript is available, set an accurate value for --sticky-offset
+  //  (reasonable defaults are used if javascript is not available)
+  const header = document.querySelector("header");
+  const setStickyOffset = () => {
+    header.style.setProperty(
+      "--sticky-offset",
+      header.querySelector("div").getBoundingClientRect().height + "px",
+    );
+  };
+  window.addEventListener("load", setStickyOffset);
+  window.addEventListener("resize", setStickyOffset);
+</script>
