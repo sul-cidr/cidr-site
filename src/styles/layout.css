@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   gap: 4em;
   padding: 1em 0;
+  position: relative;
 }
 
 main {
