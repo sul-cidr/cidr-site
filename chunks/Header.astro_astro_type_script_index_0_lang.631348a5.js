@@ -1,0 +1,1 @@
+const e=document.querySelector("header"),t=()=>{e.style.setProperty("--sticky-offset",e.querySelector("div").getBoundingClientRect().height+"px")};window.addEventListener("load",t);window.addEventListener("resize",t);
