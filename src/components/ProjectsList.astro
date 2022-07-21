@@ -1,21 +1,34 @@
 ---
 import projects from "../data/projects.yaml";
+
+// This whole shenanigans is required to use dynamic imports in the SSR/build step.
+const media = import.meta.glob("../assets/projects/*");
+for (const project of projects) {
+  if (project.image) {
+    const { default: imagePath } = await (
+      await media[`../assets/${project.image}`]
+    )();
+    project.imagePath = imagePath;
+  }
+
+  if (project.video) {
+    const { default: videoPath } = await (
+      await media[`../assets/${project.video}`]
+    )();
+    project.videoPath = videoPath;
+  }
+}
 ---
 
 {projects.map(async (project) => {
-  // const { default: image } = await import(project.image)
-  // let vid
-  // if (project.video) {
-  //   ;({ default: vid } = await import(project.video))
-  // }
   return (
     <section>
       <header>{project.title}</header>
       <article>
         {project.video ? (
-          <video src={Astro.site.pathname + project.video} loop muted />
+          <video src={project.videoPath} loop muted />
         ) : (
-          <img src={Astro.site.pathname + project.image} alt={project.title} />
+          <img src={project.imagePath} alt={project.title} />
         )}
         {project.text}
       </article>
