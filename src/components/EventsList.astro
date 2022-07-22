@@ -87,7 +87,7 @@ const f = new Intl.DateTimeFormat("en-US", {
     padding: 0.5em;
     position: relative;
     transition: width 0.2s 0.2s ease-in-out,
-      background-color 0.2s 0.2s ease-in-out;
+      background-color 0.2s 0.2s ease-in-out, box-shadow 0.2s 0.2s ease-in-out;
     width: calc(50% - 0.5em);
     z-index: 3;
 
@@ -135,7 +135,9 @@ const f = new Intl.DateTimeFormat("en-US", {
 
   input:checked + label {
     background-color: var(--fog-light);
-    transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+    transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
     width: 100%;
 
     &::before {
