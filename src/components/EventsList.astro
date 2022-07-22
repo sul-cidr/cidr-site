@@ -60,6 +60,8 @@ const f = new Intl.DateTimeFormat("en-US", {
     display: block;
     width: fit-content;
     white-space: nowrap;
+    transition: margin-right 0.2s 0.2s ease-in-out,
+      margin-left 0.2s 0.2s ease-in-out;
   }
 
   header {
@@ -102,7 +104,8 @@ const f = new Intl.DateTimeFormat("en-US", {
       right: -0.5em;
       top: 1em;
       transform: translate(50%, 0) rotate(45deg);
-      transition: transform 0.2s ease-in-out;
+      transition: transform 0.2s ease-in-out, left 0.2s 0.2s ease-in-out,
+        right 0.2s 0.2s ease-in-out;
       width: 15px;
       z-index: 10;
     }
@@ -140,15 +143,29 @@ const f = new Intl.DateTimeFormat("en-US", {
       box-shadow 0.2s ease-in-out;
     width: 100%;
 
+    header,
+    time {
+      margin-right: 2rem;
+      transition: margin-right 0.2s ease-in-out;
+    }
+
     &::before {
+      right: 1.5rem;
       transform: translate(50%, 0) rotate(0deg);
+      transition: transform 0.2s ease-in-out, right 0.2s ease-in-out;
     }
 
     &:nth-of-type(2n) {
-      margin-left: 0;
-
       &::before {
+        left: 1.5rem;
         transform: translate(-50%, 0) rotate(0deg);
+        transition: transform 0.2s ease-in-out, left 0.2s ease-in-out;
+      }
+
+      header,
+      time {
+        margin-left: 2rem;
+        transition: margin-left 0.2s ease-in-out;
       }
     }
 

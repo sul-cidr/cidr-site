@@ -9,6 +9,7 @@ body {
 
 main {
   flex-grow: 1;
+  overflow-x: hidden;
   width: var(--wrap);
 }
 
