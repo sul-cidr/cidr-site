@@ -1,6 +1,8 @@
 ---
 layout: ../layouts/base.astro
 title: Workshops
+setup: |
+  import EventsList from '../components/EventsList.astro'
 ---
 
 # Workshops @ CIDR
@@ -11,3 +13,7 @@ Check out our **upcoming workshop schedule**, **subscribe to the cidr-announce m
 
 * Links to some of the workshop materials we have up
 
+
+## Past Workshops
+
+<EventsList/>
