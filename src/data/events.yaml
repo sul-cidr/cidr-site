@@ -1,0 +1,120 @@
+- title: CIDR R Introduction to Machine Learning
+  description:
+    "<p>This two-part workshop series provides a gentle introduction to\
+    \ machine learning vocabulary and concepts. You will learn the basics for ensemble\
+    \ machine learning practices and how to classify images using various R packages.\_\
+    </p>  <p>Prerequisites: The Introduction to R CIDR workshop or equivalent experience.</p>\
+    \  <p>Make sure you have installed R and RStudio prior to the start of the workshop:\_\
+    </p>  <ul>  <li aria-level=\"1\">Download R: <a href=\"https://cloud.r-project.org/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://cloud.r-project.org/\" rel=\"\
+    noopener\">https://cloud.r-project.org/</a></li>  <li aria-level=\"1\">Download\
+    \ RStudio Desktop Free: <a href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\
+    \  </ul>"
+  datetime: 2022-03-01 14:00:00-08:00
+- title: CIDR Python Introduction to Machine Learning
+  description:
+    "<p>This two-part workshop series provides a gentle introduction to\
+    \ machine learning vocabulary and concepts. You will learn the basics for classifying\
+    \ text and images using the scikit-learn, lime, and tensorflow Python libraries.\_\
+    </p>\n<p>Prerequisites: The Introduction to Python CIDR workshop or equivalent\
+    \ experience.</p>\n<ul>\n<li>Materials: <a href=\"https://github.com/sul-cidr/Workshops/tree/master/Intro_to_ML_with_Python\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://github.com/sul-cidr/Workshops/tree/master/Intro_to_ML_with_Python\"\
+    \ rel=\"noopener\">https://github.com/sul-cidr/Workshops/tree/master/Intro_to_ML_with_Python</a></li>\n\
+    <li>This workshop will use Jupyter Notebooks. Make sure you have Python Anaconda\
+    \ Distribution 3.6+ installed before the start of the workshop: <a href=\"https://www.anaconda.com/products/individual\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://www.anaconda.com/products/individual\"\
+    \ rel=\"noopener\">https://www.anaconda.com/products/individual</a></li>\n</ul>"
+  datetime: 2022-02-22 14:00:00-08:00
+- title: CIDR R Introduction to Text Analysis
+  description:
+    "<p>Are you interested in analyzing collections of novels or journal\
+    \ articles? Do you want to understand patterns across collections of tweets or\
+    \ other social media data? In this workshop, we'll learn how to import, clean,\
+    \ and analyze collections of text with R using several standard text mining libraries.\_\
+    </p>  <p>Prerequisites: The Introduction to R CIDR workshop or equivalent experience.</p>\
+    \  <p>Make sure you have installed R and RStudio prior to the start of the workshop:\_\
+    </p>  <ul>  <li aria-level=\"1\">Materials: <a href=\"https://cengel.github.io/R-text-analysis/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://cengel.github.io/R-text-analysis/\"\
+    \ rel=\"noopener\">https://cengel.github.io/R-text-analysis/</a></li>  <li aria-level=\"\
+    1\">Download R: <a href=\"https://cloud.r-project.org/\" target=\"_blank\" data-cke-saved-href=\"\
+    https://cloud.r-project.org/\" rel=\"noopener\">https://cloud.r-project.org/</a></li>\
+    \  <li aria-level=\"1\">Download RStudio Desktop Free: <a href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\
+    \  </ul>"
+  datetime: 2022-02-15 14:00:00-08:00
+- title: CIDR Python Introduction to Text Analysis
+  description:
+    "<p>This two-part workshop series will introduce you to working with\
+    \ text data using the spaCy and textacy Python libraries. You will learn to effectively\
+    \ streamline text preprocessing, understand word tokenization, sentence segmentation,\
+    \ part-of-speech tagging, and named entity recognition using a single document\
+    \ (a short excerpt from H.G. Wells's A Short History of the World) and across\
+    \ a corpus of legal documents.\_</p>\n<p>Prerequisites: The Introduction to Python\
+    \ CIDR workshop or equivalent experience.</p>\n<ul>\n<li>Materials: <a href=\"\
+    https://github.com/sul-cidr/Workshops/tree/master/Text_Analysis_with_Python\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://github.com/sul-cidr/Workshops/tree/master/Text_Analysis_with_Python\"\
+    \ rel=\"noopener\">https://github.com/sul-cidr/Workshops/tree/master/Text_Analysis_with_Python</a></li>\n\
+    <li>This workshop will use Jupyter Notebooks. Make sure you have Python Anaconda\
+    \ Distribution 3.6+ installed before the start of the workshop: <a href=\"https://www.anaconda.com/products/individual\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://www.anaconda.com/products/individual\"\
+    \ rel=\"noopener\">https://www.anaconda.com/products/individual</a></li>\n</ul>"
+  datetime: 2022-02-08 14:00:00-08:00
+- title: CIDR R Visualization
+  description:
+    "<p>Data visualizations are one of the most important parts of any\
+    \ presentation or manuscript and are essential to effectively communicate research.\
+    \ This workshop will review three base plots in R (histogram, boxplot, and scatterplot)\
+    \ before introducing you to the R ggplot2 package.\_</p>\n<p>Prerequisites: The\
+    \ Introduction to R CIDR workshop or equivalent experience.</p>\n<p>Make sure\
+    \ you have installed R and RStudio prior to the start of the workshop:\_</p>\n\
+    <ul>\n<li aria-level=\"1\">Download R: <a href=\"https://cloud.r-project.org/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://cloud.r-project.org/\" rel=\"\
+    noopener\">https://cloud.r-project.org/</a></li>\n<li aria-level=\"1\">Download\
+    \ RStudio Desktop Free: <a href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\n\
+    </ul>"
+  datetime: 2022-02-01 14:00:00-08:00
+- title: CIDR Python Visualization
+  description:
+    "<p>Data visualizations are one of the most important parts of any\
+    \ presentation or manuscript and are essential to effectively communicate research.\
+    \ This workshop will introduce you to three basic visualizations using the Python\
+    \ matplotlib and seaborn libraries: the histogram, boxplot, and scatterplot.\_\
+    </p>\n<p>Prerequisites: The CIDR Introduction to Python workshop or equivalent\
+    \ experience.</p>\n<ul>\n<li>This workshop will use Jupyter Notebooks. Make sure\
+    \ you have Python Anaconda Distribution 3.6+ installed before the start of the\
+    \ workshop: <a href=\"https://www.anaconda.com/products/individual\" target=\"\
+    _blank\" data-cke-saved-href=\"https://www.anaconda.com/products/individual\"\
+    \ rel=\"noopener\">https://www.anaconda.com/products/individual</a></li>\n</ul>"
+  datetime: 2022-01-25 14:00:00-08:00
+- title: CIDR Introduction to R
+  description:
+    "<p>This introductory workshop is geared towards those who would like\
+    \ to get started with R or need to brush up on their skills. You will learn how\
+    \ to use R, RStudio, how to create objects in R, how to work with different data\
+    \ types, how to read tabular data into R and how to subset tables.</p>\n<p>Prerequisites:\
+    \ None. Please come with R and RStudio installed:\_</p>\n<ul>\n<li aria-level=\"\
+    1\">Materials: <a href=\"https://cengel.github.io/R-intro\" target=\"_blank\"\
+    \ data-cke-saved-href=\"https://cengel.github.io/R-intro\" rel=\"noopener\">https://cengel.github.io/R-intro</a>\_\
+    </li>\n<li aria-level=\"1\">Download R: <a href=\"https://cloud.r-project.org/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://cloud.r-project.org/\" rel=\"\
+    noopener\">https://cloud.r-project.org/</a></li>\n<li aria-level=\"1\">Download\
+    \ RStudio Desktop Free: <a href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
+    \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\n\
+    </ul>"
+  datetime: 2022-01-18 14:00:00-08:00
+- title: CIDR Introduction to Python
+  description:
+    "<p>This workshop provides an introduction to the Python programming\
+    \ language, covering basic syntax, variables, functions, and control flow. You\
+    \ will learn enough Python to write basic and allow you to explore the rich environment\
+    \ of Python packages available.\_</p>\n<p><br/>This workshop will use Jupyter\
+    \ Notebooks. Make sure you have Python Anaconda Distribution 3.6+ installed before\
+    \ the start of the workshop: <a href=\"https://www.anaconda.com/products/individual\"\
+    \ target=\"_blank\" rel=\"noopener\">https://www.anaconda.com/products/individual</a></p>"
+  datetime: 2022-01-11 14:00:00-08:00
