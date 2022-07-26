@@ -33,6 +33,7 @@ const f = new Intl.DateTimeFormat("en-US", {
     flex-direction: column;
     padding: 2em 0;
     position: relative;
+    padding-left: 6px;
   }
 
   section::before {
@@ -47,8 +48,6 @@ const f = new Intl.DateTimeFormat("en-US", {
     content: "";
     display: block;
     height: 100%;
-    left: 50%;
-    margin-left: -3px;
     position: absolute;
     top: 0;
     width: 6px;
@@ -58,18 +57,18 @@ const f = new Intl.DateTimeFormat("en-US", {
   header,
   time {
     display: block;
-    width: fit-content;
-    white-space: nowrap;
     transition: margin-right 0.2s 0.2s ease-in-out,
       margin-left 0.2s 0.2s ease-in-out;
+    width: fit-content;
   }
 
   header {
     color: var(--cardinal);
+    font-size: 0.9em;
   }
 
   time {
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-style: italic;
   }
 
@@ -78,19 +77,19 @@ const f = new Intl.DateTimeFormat("en-US", {
   }
 
   label {
-    align-items: flex-end;
+    align-items: flex-start;
     background-color: transparent;
     border-radius: 0.25em;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     margin: 0.2em 0;
-    padding-right: 0.5em;
+    margin-left: 1rem;
     padding: 0.5em;
     position: relative;
     transition: width 0.2s 0.2s ease-in-out,
       background-color 0.2s 0.2s ease-in-out, box-shadow 0.2s 0.2s ease-in-out;
-    width: calc(50% - 0.5em);
+    width: calc(100% - 1rem);
     z-index: 3;
 
     &::before {
@@ -99,26 +98,15 @@ const f = new Intl.DateTimeFormat("en-US", {
       content: "";
       display: block;
       height: 15px;
+      left: calc(-0.25em - 1rem + 3px);
       margin-top: 0;
       position: absolute;
-      right: -0.5em;
       top: 1em;
-      transform: translate(50%, 0) rotate(45deg);
+      transform: rotate(45deg);
       transition: transform 0.2s ease-in-out, left 0.2s 0.2s ease-in-out,
         right 0.2s 0.2s ease-in-out;
       width: 15px;
       z-index: 10;
-    }
-
-    &:nth-of-type(2n) {
-      align-items: flex-start;
-      align-self: flex-end;
-      padding-left: 0.5em;
-
-      &::before {
-        left: -0.5em;
-        transform: translate(-50%, 0) rotate(45deg);
-      }
     }
 
     &:hover {
@@ -130,6 +118,7 @@ const f = new Intl.DateTimeFormat("en-US", {
     border-top: 1px solid var(--cardinal);
     font-size: 0;
     margin-top: 0.5em;
+    max-width: 100%;
     opacity: 0;
     overflow: hidden;
     padding-top: 0.5em;
@@ -141,38 +130,106 @@ const f = new Intl.DateTimeFormat("en-US", {
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
     transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out,
       box-shadow 0.2s ease-in-out;
-    width: 100%;
 
     header,
     time {
-      margin-right: 2rem;
       transition: margin-right 0.2s ease-in-out;
     }
 
     &::before {
       right: 1.5rem;
-      transform: translate(50%, 0) rotate(0deg);
+      transform: none;
       transition: transform 0.2s ease-in-out, right 0.2s ease-in-out;
     }
 
-    &:nth-of-type(2n) {
+    & > div {
+      font-size: 0.7em;
+      opacity: 1;
+      transition: opacity 0.2s 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    section::before {
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    header,
+    time {
+      text-align: right;
+    }
+
+    header {
+      font-size: 1em;
+    }
+
+    time {
+      font-size: 0.9em;
+    }
+
+    label {
+      align-items: flex-end;
+      margin-left: 0;
+      width: calc(50% - 0.5em);
+
       &::before {
-        left: 1.5rem;
-        transform: translate(-50%, 0) rotate(0deg);
-        transition: transform 0.2s ease-in-out, left 0.2s ease-in-out;
+        left: unset;
+        right: calc(-0.5em + 3px);
+        transform: translate(50%, 0) rotate(45deg);
       }
 
-      header,
-      time {
-        margin-left: 2rem;
-        transition: margin-left 0.2s ease-in-out;
+      &:nth-of-type(2n) {
+        align-items: flex-start;
+        align-self: flex-end;
+        padding-left: 0.5em;
+
+        time,
+        header {
+          text-align: left;
+        }
+
+        &::before {
+          left: calc(-0.5em - 3px);
+          transform: translate(-50%, 0) rotate(45deg);
+        }
       }
     }
 
-    & > div {
-      font-size: 0.9em;
-      opacity: 1;
-      transition: opacity 0.2s 0.2s ease-in-out, font-size 0.2s ease-in-out;
+    input:checked + label {
+      width: 100%;
+
+      header,
+      time {
+        margin-right: 2rem;
+      }
+
+      &::before {
+        transform: translate(50%, 0) rotate(0deg);
+      }
+
+      & > div {
+        font-size: 0.9em;
+      }
+
+      &:nth-of-type(2n) {
+        &::before {
+          left: 1.5rem;
+          transform: translate(-50%, 0) rotate(0deg);
+          transition: transform 0.2s ease-in-out, left 0.2s ease-in-out;
+        }
+
+        header,
+        time {
+          margin-left: 2rem;
+          transition: margin-left 0.2s ease-in-out;
+        }
+      }
+    }
+
+    /* styling for included description html */
+    :global(ul) {
+      padding-left: 1em;
     }
   }
 </style>
