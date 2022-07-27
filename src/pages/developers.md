@@ -1,9 +1,9 @@
 ---
 layout: ../layouts/base.astro
-title: Developers
+title: Dev. Team
 ---
 
-# Developers @ CIDR
+# Dev. Team @ CIDR
 
 The CIDR developer team supports scholarship through long-term collaborations with faculty on development projects, one-off assistance with specific, small-scale technical tasks, and through teaching [workshops](workshops/) and participating in [consulting](consulting/). The long-term development projects ideally advance not only the research in question, but also contribute to expanding the infrastructure and methods of the digital humanities and computational social sciences more generally.
 
