@@ -15,6 +15,6 @@ Some popular resources include:
 * [L2 Voter and Demographic Dataset](https://searchworks.stanford.edu/view/12357569)
 * [Washington Post Archival Data](https://searchworks.stanford.edu/view/13718042)
 
-You can explore more data collections through [SearchWorks](https://searchworks.stanford.edu/), the library catalog, or [Data Farm](https://redivis.com/sul), Stanford's exploration tool for research datasets.
+You can explore more data collections through [SearchWorks](https://searchworks.stanford.edu/), the library catalog, or [Data Farm](https://redivis.com/sul), Stanford's exploration tool for research datasets, including those made available from other campus entities.
 
 **Note:** *Please do not scrape University-licensed resources*; we’re happy to help you access the materials you need in a way that doesn’t violate our agreements with publishers.
