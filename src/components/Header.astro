@@ -84,7 +84,7 @@ import Nav from "./Nav.astro";
 <script is:inline>
   // if javascript is available, set an accurate value for --sticky-offset
   //  (reasonable defaults are used if javascript is not available)
-  const header = document.querySelector("header");
+  const header = document.querySelector("header[role='banner']");
   const setStickyOffset = () => {
     header.style.setProperty(
       "--sticky-offset",
