@@ -55,7 +55,7 @@ main {
     font-size: 1.2em;
     font-weight: 400;
     left: 50%;
-    margin: 1em auto;
+    margin: 2em auto 1em;
     padding-bottom: 0.125em;
     position: relative;
     transform: translateX(-50%);

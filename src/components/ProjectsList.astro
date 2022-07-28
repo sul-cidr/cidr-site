@@ -24,14 +24,12 @@ for (const project of projects) {
   return (
     <section>
       <header>{project.title}</header>
-      <article>
-        {project.video ? (
-          <video src={project.videoPath} loop muted />
-        ) : (
-          <img src={project.imagePath} alt={project.title} />
-        )}
-        {project.text}
-      </article>
+      {project.video ? (
+        <video src={project.videoPath} loop muted />
+      ) : (
+        <img src={project.imagePath} alt={project.title} />
+      )}
+      <article>{project.text}</article>
     </section>
   )
 })}
@@ -47,11 +45,16 @@ for (const project of projects) {
 
 <style>
   section {
+    align-items: flex-end;
+    display: grid;
+    gap: 0.5em 1em;
+    grid-template-areas: "header" "image" "text";
+    margin-top: 1em;
     position: relative;
     transition: transform 0.1s ease-in-out;
 
     & + section {
-      margin-top: 2em;
+      margin-top: 3em;
     }
 
     &::before {
@@ -79,42 +82,45 @@ for (const project of projects) {
   }
 
   header {
+    border-bottom: 1px solid var(--cool-grey);
     color: var(--cardinal);
     font-size: 2rem;
     font-variant: petite-caps;
     font-weight: 400;
-    text-align: right;
+    grid-area: header;
   }
 
   article {
+    align-self: flex-start;
     font-size: smaller;
+    grid-area: text;
+    max-width: 100%;
     overflow: hidden;
     text-align: justify;
-    max-width: 100%;
-
-    img,
-    video {
-      float: left;
-      margin: 0 1em 0.5em 0;
-
-      border: 2px solid var(--cardinal);
-      box-sizing: content-box;
-      padding: 2px;
-
-      max-width: calc(100% - 8px);
-    }
   }
 
-  section:nth-child(even) {
-    header {
-      text-align: left;
+  img,
+  video {
+    border: 2px solid var(--cardinal);
+    box-sizing: content-box;
+    grid-area: image;
+    max-width: calc(100% - 8px);
+    padding: 2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    section {
+      grid-template-areas: "header image" "text image";
+      grid-template-columns: 1fr auto;
+      grid-template-rows: auto 1fr;
     }
 
-    article {
-      img,
-      video {
-        float: right;
-        margin: 0 0 0.5em 1em;
+    section:nth-child(even) {
+      grid-template-areas: "image header" "image text";
+      grid-template-columns: auto 1fr;
+
+      header {
+        text-align: right;
       }
     }
   }
