@@ -1,4 +1,250 @@
 - title: CIDR R Introduction to Machine Learning
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>This workshop provides a beginner-friendly introduction to machine learning vocabulary and concepts, quantitative data preprocessing, and the SuperLearner R package.<p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>CIDR Introduction to R workshop (or similar experience).</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>R: <a href="https://cloud.r-project.org/">https://cloud.r-project.org/</a></li>
+        <li>RStudio Desktop Free: <a href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Intro_ML_R">https://github.com/sul-cidr/Workshops/tree/master/Intro_ML_R</a></li>
+      </ul>
+    </p>
+  datetime: 2022-05-24 14:00:00-08:00
+
+- title: CIDR Python Introduction to Machine Learning
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>This workshop provides a gentle introduction to machine learning vocabulary and concepts. You will learn the basics for classifying text and images using the scikit-learn, lime, and tensorflow Python libraries.</p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>CIDR Introduction to Python workshop (or similar experience).</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>Python Anaconda Distribution 3.6+: <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Intro_to_ML_with_Python">https://github.com/sul-cidr/Workshops/tree/master/Intro_to_ML_with_Python</a></li>
+      </ul>
+    </p>
+  datetime: 2022-05-17 14:00:00-08:00
+
+- title: CIDR R Introduction to Text Analysis
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>Are you interested in analyzing collections of novels or journal articles? Do you want to understand patterns across collections of tweets or other social media data? In this workshop, we'll learn how to import, clean, and analyze collections of text with R using several standard text mining libraries.<p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>The Introduction to R CIDR workshop or equivalent experience.</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>R: <a href="https://cloud.r-project.org/">https://cloud.r-project.org/</a></li>
+        <li>RStudio Desktop Free: <a href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://cengel.github.io/R-text-analysis/">https://cengel.github.io/R-text-analysis/</a></li>
+      </ul>
+    </p>
+  datetime: 2022-05-16 14:00:00-08:00
+
+- title: CIDR Python Introduction to Text Analysis
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> Zoom</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>This workshop will introduce you to working with text data using the spaCy and textacy Python libraries. You will learn to effectively streamline text preprocessing, understand word tokenization, sentence segmentation, part-of-speech tagging, and named entity recognition using a single document (a short excerpt from H.G. Wells's A Short History of the World) and across a corpus of legal documents.</p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>CIDR Introduction to Python workshop (or similar experience)</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>Python Anaconda Distribution 3.6+: <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Text_Analysis_with_Python">https://github.com/sul-cidr/Workshops/tree/master/Text_Analysis_with_Python</a></li>
+      </ul>
+    </p>
+  datetime: 2022-05-10 14:00:00-08:00
+
+- title: CIDR R Visualization
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>Data visualizations are essential to effectively communicate research. This workshop will review three base plots in R (histogram, boxplot, and scatterplot) before introducing you to the R ggplot2 package.<p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>CIDR Introduction to R workshop (or equivalent knowledge).</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>R: <a href="https://cloud.r-project.org/">https://cloud.r-project.org/</a></li>
+        <li>RStudio Desktop Free: <a href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://github.com/sul-cidr/data-visualization-ggplot2">https://github.com/sul-cidr/data-visualization-ggplot2</a></li>
+      </ul>
+    </p>
+  datetime: 2022-05-05 14:00:00-08:00
+
+- title: CIDR R Data Wrangling
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>This workshop is for those who know the basics of R and would like to get started working with their research data. We will look into the tools that R provides to manipulate and explore tabular data, including reshaping, summarizing, and plotting. You will learn how to use the tidyverse package, in particular dplyr, tidyr, and ggplot.<p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>CIDR Introduction to R workshop (or equivalent knowledge).</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>R: <a href="https://cloud.r-project.org/">https://cloud.r-project.org/</a></li>
+        <li>RStudio Desktop Free: <a href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://cengel.github.io/R-data-wrangling">https://cengel.github.io/R-data-wrangling</a></li>
+      </ul>
+    </p>
+  datetime: 2022-05-03 14:00:00-08:00
+
+- title: CIDR Python Visualization
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>Data visualizations are essential to effectively communicate research. This workshop will introduce you to three basic visualizations using the Python matplotlib and seaborn libraries: histogram, boxplot, and scatterplot.</p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>CIDR Introduction to Python (or similar knowledge)</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>Python Anaconda Distribution 3.6+: <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://eastbayev.github.io/SSDS-TAML/winter2022/viz.html">https://eastbayev.github.io/SSDS-TAML/winter2022/viz.html</a></li>
+      </ul>
+    </p>
+  datetime: 2022-04-28 14:00:00-08:00
+
+- title: CIDR Python Data Wrangling
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>This workshop teaches basic data manipulation with Python using the Pandas library, and will cover topics such as loading data into and out of a Pandas DataFrame, performing basic data cleaning, preparation, and analysis, and visualizing relevant aspects of a dataset.</p>
+    <p><strong>Prerequisites:</strong>
+      <ul class="ws1">
+        <li>CIDR Introduction to Python (or similar knowledge). (If you need a refresher, check out A Byte of Python (https://python.swaroopch.com/).</li>
+      </ul>
+    </p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>Python Anaconda Distribution 3.6+: <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Data_Manipulation_with_Python">https://github.com/sul-cidr/Workshops/tree/master/Data_Manipulation_with_Python</a></li>
+      </ul>
+    </p>
+  datetime: 2022-04-26 14:00:00-08:00
+
+- title: CIDR Introduction to R
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>This introductory workshop is geared towards those who would like to get started with R or need to brush up on their skills. You will learn how to use R, RStudio, how to create objects in R, how to work with different data types, how to read tabular data into R and how to subset tables.<p>
+    <p><strong>Prerequisites:</strong> None</p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>R: <a href="https://cloud.r-project.org/">https://cloud.r-project.org/</a></li>
+        <li>RStudio Desktop Free: <a href="https://www.rstudio.com/products/rstudio/download/">https://www.rstudio.com/products/rstudio/download/</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://cengel.github.io/R-intro">https://cengel.github.io/R-intro</a></li>
+      </ul>
+    </p>
+  datetime: 2022-04-19 14:00:00-08:00
+
+- title: CIDR Introduction to Python
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> This is a Hybrid workshop! In-person seating in the Velma Denning Room (120F Green Library) is limited and will be assigned on a first-come, first-serve basis.</div>
+      <div><strong>Contact:</strong> muzzall@stanford.edu</div>
+    </div>
+    <p>This workshop provides an introduction to the Python programming language: basic syntax, variables, functions, and control flow. You will learn enough Python to perform common tasks explore the rich environment of Python packages available.</p>
+    <p><strong>Prerequisites:</strong> None</p>
+    <p><strong>Before the workshop, be sure to download and install:</strong>
+      <ul class="ws1">
+        <li>Python Anaconda Distribution 3.6+: <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a></li>
+      </ul>
+    </p>
+    <p><strong>Workshop materials:</strong>
+      <ul class="ws1">
+        <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Introduction_to_Python">https://github.com/sul-cidr/Workshops/tree/master/Introduction_to_Python</a></li>
+      </ul>
+    </p>
+  datetime: 2022-04-12 14:00:00-08:00
+
+- title: Accessing & Analyzing Large Corpora in the HathiTrust Research Center
+  description: |
+    <div class="ws1">
+      <div><strong>Location:</strong> Zoom</div>
+      <div><strong>Contact:</strong> katebar@stanford.edu</div>
+    </div>
+    The HathiTrust Research Center has millions of documents scanned by Google and universities, including books, articles, and reference material. This workshop will cover how to identify documents you want to work with, pull them into an HTRC “workset”, and perform computational analysis on that workset via pre-programmed algorithms or your own code in the HTRC data capsule.
+  datetime: 2022-03-08 14:00:00-08:00
+
+- title: CIDR R Introduction to Machine Learning
   description:
     "<p>This two-part workshop series provides a gentle introduction to\
     \ machine learning vocabulary and concepts. You will learn the basics for ensemble\
