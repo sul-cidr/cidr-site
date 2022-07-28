@@ -37,9 +37,11 @@ const links = [
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em 1em;
+    gap: 0.5em 0.8em;
     justify-content: center;
-    padding: 0 1em;
+    margin: 0 auto;
+    padding: 0 0.5em;
+    width: var(--wrap);
   }
 
   a {
@@ -92,18 +94,26 @@ const links = [
     }
 
     :global(svg) {
+      height: 1.2rem;
+      width: 1.2rem;
       transform: translateY(3px);
       vertical-align: baseline;
     }
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 750px) {
+    nav {
+      justify-content: flex-start;
+    }
+  }
+
+  @media screen and (min-width: 980px) {
     nav {
       gap: 0.5em 2em;
     }
 
     a {
-      font-size: 1.4em;
+      font-size: 1.2em;
     }
   }
 </style>
