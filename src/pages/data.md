@@ -3,18 +3,18 @@ layout: ../layouts/base.astro
 title: Notable Data Collections
 ---
 
-# Notable Data Collections @ CIDR
+# Research Data Curation @ CIDR
 
-Looking for data for your next research project? Stanford Libraries has purchased or subscribed to a wide array of social science and humanities data sets.
+The Research Data Curator provides technical services for data acquisitions. Library technical services specialize in acquiring, organizing and preserving all kinds of library materials. Recently, data curation has emerged as a new type of library technical service.
 
-Some popular resources include:
+Data are unique digital materials with specific curation needs, and require beginner-to-intermediate programming skills. Because of these requirements, the Research Data Curator is located in the Center for Interdisciplinary Digital Research. The CIDR staff provide instruction, consulting, and development support for data intensive research and digital scholarship. If there are data processing or ETL tasks with which the Research Data Curator needs assistance, they can consult the CIDR developers, academic technology specialists or Head of SSDS. The CIDR staff also provides substantial support to patrons using library data collections. Because they work adjacently, the Research Data Curator can provide the CIDR staff with detailed information about the data collections it supports; and, at the same time, the CIDR staff can share use cases that inform data curation workflows.
+
+Even though the Research Data Curator is located in CIDR, they collaborate heavily with the Acquisitions and Metadata departments (Technical Services & Access Division) and humanities and social science bibliographers (Collections Division).
+
+Some recent data curation projects include:
 
 * [The New York Times TDM Archive](https://searchworks.stanford.edu/view/13937231)
 * [Core Logic Datasets Collection](https://searchworks.stanford.edu/view/14127292)
 * Gallup Public Opinion Polls, including [Gallup World Poll](https://searchworks.stanford.edu/view/13379512) and [Gallup Poll Social Series](https://searchworks.stanford.edu/view/14142190)
 * [L2 Voter and Demographic Dataset](https://searchworks.stanford.edu/view/12357569)
 * [Washington Post Archival Data](https://searchworks.stanford.edu/view/13718042)
-
-You can explore more data collections through [SearchWorks](https://searchworks.stanford.edu/), the library catalog, or [Data Farm](https://redivis.com/sul), Stanford's exploration tool for research datasets, including those made available from other campus entities.
-
-**Note:** *Please do not scrape University-licensed resources*; we’re happy to help you access the materials you need in a way that doesn’t violate our agreements with publishers.
