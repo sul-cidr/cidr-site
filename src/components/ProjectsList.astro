@@ -47,9 +47,12 @@ for (const project of projects) {
 
 <style>
   section {
-    margin-top: 2em;
     position: relative;
     transition: transform 0.1s ease-in-out;
+
+    & + section {
+      margin-top: 2em;
+    }
 
     &::before {
       border-radius: 0.25em;
@@ -87,11 +90,18 @@ for (const project of projects) {
     font-size: smaller;
     overflow: hidden;
     text-align: justify;
+    max-width: 100%;
 
     img,
     video {
       float: left;
       margin: 0 1em 0.5em 0;
+
+      border: 2px solid var(--cardinal);
+      box-sizing: content-box;
+      padding: 2px;
+
+      max-width: calc(100% - 8px);
     }
   }
 
@@ -101,7 +111,8 @@ for (const project of projects) {
     }
 
     article {
-      img {
+      img,
+      video {
         float: right;
         margin: 0 0 0.5em 1em;
       }

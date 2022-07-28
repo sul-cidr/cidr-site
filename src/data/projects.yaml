@@ -1,10 +1,40 @@
+- title: The Pianolatron
+  text: |
+    A browser-based application for interactive and historically informed playback and viewing of the more than 1,000 player piano rolls collected and digitized at the Stanford Music Library’s Archive of Recorded Sound, built through close coordination with Professor George Barth and Lecturer Kumaran Arul from the Stanford Department of Music.
+  image: projects/pianolatron.320x206.jpeg
+
 - title: Noh as Intermedia
   text: |
     A richly interactive exploration of how Japanese Noh theater draws on relationships between its component art forms, led by Professor Jarosław Kapuściński and Senior Lecturer François Rose from the Stanford Department of Music and Professor Fujita Takanori from the Kyoto City University of Arts. The completed site presents deep, interactive annotations of digitized performances of two exemplary plays, augmented with explanatory texts and multimedia excerpts.
   image: projects/noh-as-intermedia.jpeg
   video: projects/noh-as-intermedia.webm
 
-- title: Digital Analysis of Syriac Handwriting
+- title: Global Medieval Sourcebook
+  text: |
+    An NEH-funded multilingual collection of medieval texts and translations developed by Kathryn Starkey in Germanic Studies.
+  image: projects/global-medieval-sourcebook.320x183.jpeg
+
+- title: Digital Analysis of Syriac Handwriting (DASH)
   text: |
     A customizable scriptchart generator developed in collaboration with Professor Michael Penn from the Stanford Department of Religious Studies. The generator advances paleographic studies of the Aramaic dialect of Syriac by providing a range of options for viewing and comparing letter instances in context, drawing from a corpus of 154 digitized Syriac manuscripts.
   image: projects/digital-analysis-of-syriac-handwriting.png
+
+- title: Semiotic Analysis of Test Items (SATI)
+  text: |
+    An ongoing inquiry with Professor Guillermo Solano-Flores from the Stanford Graduate School of Education into the potential of using machine learning methods to augment the study of a large, internationally sourced collection of standardized test questions.
+  image: projects/semiotic-analysis-of-test-items.380x216.jpeg
+
+- title: The Chinese Deathscape
+  text: |
+    Grave Reform in Modern China: featuring texts with linked maps and timeline visualizations, this site, developed in collaboration with author and editor Professor Thomas S. Mullaney from the Stanford Department of History, has received long-term support from the Stanford University Press.
+  image: projects/chinese_deathscape.320x184.jpeg
+
+- title: Kindred Britain and Authorial London
+  text: |
+    These pioneering digital explorations of network-oriented and geospatial literary and cultural history were built upon the work of Professor Nicholas Jenkins and the late Professor Martin Evans from the Stanford Department of English.
+  image: projects/authorial-london.320x184.jpeg
+
+- title: French Revolution Digital Archive
+  text: |
+    Led by Dan Edelstein and Keith Baker, a collection of resources around the French Revolution, including a searchable full-text version of Archives parlementaires / Parliamentary archives (https://sul-philologic.stanford.edu/philologic/archparl/) and a gallery of images of the French revolution.
+  image: projects/french-revolution-digital-archive.320x183.jpeg
