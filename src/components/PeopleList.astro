@@ -16,11 +16,31 @@ for (const person of people) {
   .map((person) => (
     <section>
       <header>
-        <h2>{person.name}</h2>
+        <h2>
+          {(person.link && <a href={person.link}>{person.name}</a>) ||
+            person.name}
+        </h2>
         <span>{person.title}</span>
       </header>
       <article>{person.text}</article>
-      <img src={person.imagePath} alt={person.name} width="120" height="160" />
+      {(person.link && (
+        <a href={person.link} class="image">
+          <img
+            src={person.imagePath}
+            alt={person.name}
+            width="120"
+            height="160"
+          />
+        </a>
+      )) || (
+        <img
+          src={person.imagePath}
+          alt={person.name}
+          width="120"
+          height="160"
+          class="image"
+        />
+      )}
     </section>
   ))}
 
@@ -65,12 +85,15 @@ for (const person of people) {
     text-align: justify;
   }
 
+  .image {
+    grid-area: image;
+  }
+
   img {
     border: 2px solid var(--cardinal);
     border-radius: 0.25em;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     box-sizing: content-box;
-    grid-area: image;
     padding: 2px;
   }
 
