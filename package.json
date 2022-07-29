@@ -7,7 +7,7 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "gh-deploy": "bin/astro-gh-deploy.sh"
+    "gh-deploy": "CNAME=cidr.stanford.edu bin/astro-gh-deploy.sh"
   },
   "devDependencies": {
     "@fontsource/source-sans-pro": "^4.5.10",
