@@ -12,6 +12,11 @@ During the three primary quarters of the academic year, CIDR offers hands-on wor
 Upcoming workshops will be listed below, and you can also [subscribe to the cidr-announce mailing list](https://mailman.stanford.edu/mailman/listinfo/cidr-announce) to receive notifications about upcoming CIDR workshops.  Many of our workshop materials are available in our [Workshops GitHub Repository](https://github.com/sul-cidr/Workshops/).
 
 
+## Upcoming Workshops for Autumn 2022-23
+
+Our workshop schedule for Autumn 2022-23 has yet to be released.  Please [subscribe to the cidr-announce mailing list](https://mailman.stanford.edu/mailman/listinfo/cidr-announce) or check back here for updates.
+
+
 ## Past Workshops
 
 <EventsList/>
