@@ -88,6 +88,7 @@ for (const project of projects) {
     font-weight: 400;
     grid-area: header;
     line-height: 1;
+    text-align: center;
   }
 
   article {
@@ -103,14 +104,17 @@ for (const project of projects) {
 
   img,
   video {
+    align-self: center;
     border: 2px solid var(--cardinal);
     box-sizing: content-box;
     grid-area: image;
+    justify-self: center;
+    margin-top: 0.25em;
     max-width: calc(100% - 8px);
     padding: 2px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 900px) {
     section {
       grid-template-areas: "header image" "text image";
       grid-template-columns: 1fr auto;
@@ -120,10 +124,6 @@ for (const project of projects) {
     section:nth-child(even) {
       grid-template-areas: "image header" "image text";
       grid-template-columns: auto 1fr;
-
-      header {
-        text-align: right;
-      }
     }
   }
 </style>
