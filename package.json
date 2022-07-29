@@ -10,6 +10,7 @@
     "gh-deploy": "CNAME=cidr.stanford.edu bin/astro-gh-deploy.sh"
   },
   "devDependencies": {
+    "@astrojs/mdx": "^0.3.1",
     "@fontsource/source-sans-pro": "^4.5.10",
     "@rollup/plugin-yaml": "^3.1.0",
     "astro": "1.0.0-rc.2",
