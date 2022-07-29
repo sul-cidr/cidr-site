@@ -82,20 +82,22 @@ for (const project of projects) {
   }
 
   header {
-    border-bottom: 1px solid var(--cool-grey);
     color: var(--cardinal);
     font-size: 2rem;
     font-variant: petite-caps;
     font-weight: 400;
     grid-area: header;
+    line-height: 1;
   }
 
   article {
+    border-top: 1px solid var(--cool-grey);
     align-self: flex-start;
     font-size: smaller;
     grid-area: text;
     max-width: 100%;
     overflow: hidden;
+    padding-top: 0.5em;
     text-align: justify;
   }
 
