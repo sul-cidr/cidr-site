@@ -22,7 +22,7 @@ for (const project of projects) {
 
   // might as well parse and render any markdown asynchronously here too,
   //  while we're at it.
-  const { code: html } = await renderMarkdown(project.text);
+  const { code: html } = await renderMarkdown(project.text, {});
   project.html = html;
 }
 ---
@@ -44,7 +44,7 @@ for (const project of projects) {
       )}
       <article set:html={project.html} />
     </section>
-  )
+  );
 })}
 
 <script>
