@@ -1,5 +1,12 @@
 ---
+import { renderMarkdown } from "@astrojs/markdown-remark";
+
 import people from "../data/people.yaml";
+
+export async function parseMarkdown(toParse = "") {
+  const output = await renderMarkdown(toParse);
+  return output.code;
+}
 
 // This whole shenanigans is required to use dynamic imports in the SSR/build step.
 const images = import.meta.glob("../assets/people/*");
@@ -8,6 +15,11 @@ for (const person of people) {
     await images[`../assets/${person.image}`]
   )();
   person.imagePath = imagePath;
+
+  // might as well parse and render any markdown asynchronously here too,
+  //  while we're at it.
+  const { code: html } = await renderMarkdown(person.text);
+  person.html = html;
 }
 ---
 
@@ -22,7 +34,7 @@ for (const person of people) {
         </h2>
         <span>{person.title}</span>
       </header>
-      <article>{person.text}</article>
+      <article set:html={person.html} />
       {(person.link && (
         <a href={person.link} class="image">
           <img
