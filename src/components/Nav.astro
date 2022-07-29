@@ -12,6 +12,12 @@ const links = [
 ];
 ---
 
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle">
+  <span class="diagonal-1">&nbsp;</span>
+  <span class="horizontal">&nbsp;</span>
+  <span class="diagonal-2">&nbsp;</span>
+</label>
 <nav>
   {links.map(({ label, url, icon = false }) => (
     <a
@@ -33,15 +39,89 @@ const links = [
 </nav>
 
 <style>
+  label {
+    cursor: pointer;
+    height: 22px;
+    right: 15px;
+    position: absolute;
+    position: absolute;
+    top: calc((var(--sticky-offset) - 0.75em) / 2);
+    transition: all 0.3s;
+    width: 22px;
+    z-index: 99;
+
+    span {
+      background-color: var(--cardinal);
+      height: 3px;
+      position: absolute;
+      transition: all 0.3s;
+      user-select: none;
+      width: 100%;
+
+      &.horizontal {
+        float: left;
+        margin-top: 3px;
+        position: relative;
+      }
+
+      &.diagonal-1 {
+        float: left;
+        position: relative;
+      }
+
+      &.diagonal-2 {
+        float: left;
+        margin-top: 3px;
+        position: relative;
+      }
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ label {
+      .horizontal {
+        box-sizing: border-box;
+        opacity: 0;
+      }
+
+      .diagonal-1 {
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+      }
+
+      .diagonal-2 {
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+      }
+    }
+
+    &:checked ~ nav {
+      margin-top: 0;
+    }
+  }
+
   nav {
+    --nav-item-height: 30px;
+    --nav-vertical-gap: 0.5em;
+
     align-items: center;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 0.5em 0.8em;
+    gap: var(--nav-vertical-gap) 0.8em;
     justify-content: center;
     margin: 0 auto;
+    margin-top: calc(
+      -1 * (var(--nav-item-height) * 8 + var(--nav-vertical-gap) * 7)
+    );
     padding: 0 0.5em;
+    transition: margin-top 0.3s ease;
     width: var(--wrap);
+    z-index: -1;
   }
 
   a {
@@ -50,6 +130,7 @@ const links = [
     text-decoration: none;
     color: var(--cardinal);
     font-size: 1.1em;
+    height: var(--nav-item-height);
     white-space: nowrap;
 
     &[href] {
@@ -96,14 +177,21 @@ const links = [
     :global(svg) {
       height: 1.2rem;
       width: 1.2rem;
-      transform: translateY(3px);
+      transform: translateY(2px);
       vertical-align: baseline;
     }
   }
 
   @media screen and (min-width: 750px) {
+    label {
+      display: none;
+    }
+
     nav {
+      flex-direction: row;
       justify-content: flex-start;
+      margin-top: 0;
+      transition: none;
     }
   }
 

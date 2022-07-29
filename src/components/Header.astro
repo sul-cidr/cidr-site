@@ -21,7 +21,7 @@ import Nav from "./Nav.astro";
 
 <style>
   header {
-    --sticky-offset: 144px;
+    --sticky-offset: 77px;
 
     background-color: var(--fog-light);
     box-shadow: 0 0 4px 4px rgb(0 0 0 / 40%);
@@ -32,7 +32,7 @@ import Nav from "./Nav.astro";
     overflow-x: hidden;
     padding-bottom: 0.25em;
     position: sticky;
-    top: calc(0px - var(--sticky-offset) - 0.5em);
+    top: 0;
     z-index: 4;
   }
 
@@ -41,9 +41,10 @@ import Nav from "./Nav.astro";
     background-color: var(--fog-light);
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 0.25em;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 50px 0 auto;
+    padding-left: 0.5em;
     padding-top: 0.5em;
     width: var(--wrap);
   }
@@ -83,14 +84,18 @@ import Nav from "./Nav.astro";
   }
 
   @media screen and (min-width: 750px) {
+    /* switch to un-collapsed nav at this breakpoint */
     header {
       --sticky-offset: 77px;
       padding-bottom: 1em;
+      top: calc(0px - var(--sticky-offset) - 0.5em);
     }
 
     div {
       align-items: flex-end;
       flex-direction: row;
+      margin: 0 auto;
+      padding-left: 0;
     }
 
     span {
