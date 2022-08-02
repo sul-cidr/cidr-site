@@ -1,7 +1,8 @@
 - title: The Pianolatron
   text: |
     A browser-based application for interactive and historically informed playback and viewing of the more than 1,000 player piano rolls collected and digitized at the Stanford Music Library’s Archive of Recorded Sound, built through close coordination with Professor George Barth and Lecturer Kumaran Arul from the Stanford Department of Music.
-  image: projects/pianolatron.320x206.jpeg
+  image: projects/pianolatron.322x216.png
+  video: projects/pianolatron.webm
   link: https://pianolatron.stanford.edu
 
 - title: Noh as Intermedia
@@ -20,7 +21,8 @@
 - title: Digital Analysis of Syriac Handwriting (DASH)
   text: |
     A customizable scriptchart generator developed in collaboration with Professor Michael Penn from the Stanford Department of Religious Studies. The generator advances paleographic studies of the Aramaic dialect of Syriac by providing a range of options for viewing and comparing letter instances in context, drawing from a corpus of 154 digitized Syriac manuscripts.
-  image: projects/digital-analysis-of-syriac-handwriting.png
+  image: projects/digital-analysis-of-syriac-handwriting.345x208.png
+  video: projects/digital-analysis-of-syriac-handwriting.webm
   link: https://dash.stanford.edu
 
 - title: Semiotic Analysis of Test Items (SATI)
