@@ -31,12 +31,14 @@ for (const project of projects) {
   return (
     <section>
       {project.link ? (
-        <a href={project.link}><header>{project.title}</header></a>
+        <a href={project.link}>
+          <header>{project.title}</header>
+        </a>
       ) : (
         <header>{project.title}</header>
       )}
       {project.video ? (
-        <video src={project.videoPath} loop muted />
+        <video src={`${project.videoPath}#t=8`} loop muted />
       ) : (
         <img src={project.imagePath} alt={project.title} />
       )}
