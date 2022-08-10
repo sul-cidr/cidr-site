@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 
+import mdx from "@astrojs/mdx";
 import yaml from "@rollup/plugin-yaml";
 
 export default defineConfig({
@@ -9,4 +10,5 @@ export default defineConfig({
   vite: {
     plugins: [yaml()],
   },
+  integrations: [mdx()],
 });

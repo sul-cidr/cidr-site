@@ -18,7 +18,7 @@ for (const person of people) {
 
   // might as well parse and render any markdown asynchronously here too,
   //  while we're at it.
-  const { code: html } = await renderMarkdown(person.text);
+  const { code: html } = await renderMarkdown(person.text, {});
   person.html = html;
 }
 ---
