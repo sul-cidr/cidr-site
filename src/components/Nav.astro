@@ -1,9 +1,8 @@
 ---
-import config from "../../astro.config.mjs";
 import Icon from "./Icon.astro";
 
 const pathname = Astro.url.pathname;
-const base = config.base || "/";
+const base = "/";
 
 const links = [
   { label: "Home", icon: "home", url: "" },
@@ -24,15 +23,17 @@ const links = [
   <span class="diagonal-2">&nbsp;</span>
 </label>
 <nav>
-  {links.map(({ label, url, icon = false }) => (
-    <a
-      class={pathname === base + url ? "active" : null}
-      href={pathname === base + url ? null : base + url}
-      aria-label={icon ? label : null}
-    >
-      {icon ? <Icon name={icon} /> : label}
-    </a>
-  ))}
+  {
+    links.map(({ label, url, icon = false }) => (
+      <a
+        class={pathname === base + url ? "active" : null}
+        href={pathname === base + url ? null : base + url}
+        aria-label={icon ? label : null}
+      >
+        {icon ? <Icon name={icon} /> : label}
+      </a>
+    ))
+  }
 </nav>
 
 <style>
