@@ -1,7 +1,9 @@
 :root {
-  --cardinal: #8c1515;
   --black-100: #2e2d29;
   --cool-grey: #53565a;
+
+  --cardinal: #8c1515;
+  --lagunita-dark: #006b81;
 
   --fog: #dad7cb;
   --fog-light: #f4f4f4;
