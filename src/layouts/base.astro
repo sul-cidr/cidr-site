@@ -3,24 +3,21 @@ import "@fontsource/source-sans-pro/300.css";
 import "@fontsource/source-sans-pro/400.css";
 import "@fontsource/source-sans-pro/600.css";
 
-
 import Head from "../components/Head.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-let { content: { title, bodyClass } } = Astro.props;
+let { title, bodyClass } = Astro.props.content || Astro.props;
 ---
 
 <html lang="en">
+  <Head {title} />
 
-<Head title={title} />
-
-<body class={bodyClass}>
-  <Header />
-  <main>
-    <slot />
-  </main>
-  <Footer />
-</body>
-
+  <body class={bodyClass}>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
