@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/base.astro";
+import { links } from "../components/Nav.astro";
+
+const base = "/";
+---
+
+<BaseLayout title="Page Not Found">
+  <header>The page you are looking for is not available.</header>
+  <p>
+    Please check your URL or email us at <a
+      href="mailto:contact-cidr@stanford.edu"
+      >contact-cidr@stanford.edu
+    </a>
+    if you need assistance.
+  </p>
+
+  <nav class="main-links">
+    {links.map(({ label, url }) => <a href={base + url}>{label}</a>)}
+  </nav>
+</BaseLayout>
+
+<style>
+  header {
+    font-size: clamp(1em, 1.4em, 3vw);
+    font-weight: 400;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  nav.main-links {
+    margin-top: 2em;
+
+    a {
+      color: var(--cardinal);
+      display: block;
+      font-weight: 300;
+      margin: 0 auto;
+      max-width: 400px;
+      padding: 0.5em 0;
+      text-align: left;
+      transition: color 0.1s ease-in-out;
+
+      &::before {
+        color: var(--black-100);
+        content: "→";
+        display: inline-block;
+        margin-right: 1em;
+        opacity: 0.5;
+        transition: opacity 0.1s ease-in-out;
+      }
+
+      &:hover {
+        color: var(--lagunita-dark);
+        font-weight: 400;
+        text-decoration: none;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+</style>
