@@ -56,3 +56,10 @@
   image: people/evan_muzzall.png
   text: |
     Evan is Head of Software and Services for Data Science. He assists students, faculty, and staff with all aspects of computational research workflows and across many disciplines. Learn more at [https://ssds.stanford.edu](https://ssds.stanford.edu).
+
+- name: Anne Ladyem McDivitt
+  sort: McDivitt
+  title: History Academic Technology Specialist
+  image: people/anne_ladyem_mcdivitt.jpeg
+  text: |
+    Anne Ladyem McDivitt collaborates with the History Department to support their digital research, projects, and pedagogy. Anne Ladyem has a background in Digital History and specializes in digital storytelling.
