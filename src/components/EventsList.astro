@@ -13,19 +13,19 @@ const fmt = {
   year: "numeric",
 };
 
-let events;
+let events = allEvents.sort((a, b) => b.datetime - a.datetime);
 
 switch (type) {
   case "past":
-    events = allEvents.filter((event) => event.datetime < new Date());
+    events = events.filter((event) => event.datetime < new Date());
     break;
 
   case "upcoming":
-    events = allEvents.filter((event) => event.datetime > new Date()).reverse();
+    events = events.filter((event) => event.datetime > new Date()).reverse();
     break;
 
   default:
-    events = allEvents;
+    break;
 }
 ---
 
