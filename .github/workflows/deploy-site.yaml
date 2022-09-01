@@ -1,0 +1,21 @@
+name: Deploy Site
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"
+
+jobs:
+  deploy-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+      - name: Install Node Dependencies
+        run: yarn install --frozen-lockfile
+      - name: Deploy Site to GH Pages
+        run: |
+          git config user.email "contact-cidr@stanford.edu"
+          git config user.name "CIDRbot"
+          yarn gh-deploy
