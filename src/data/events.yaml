@@ -21,7 +21,7 @@
         <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Intro_ML_R">https://github.com/sul-cidr/Workshops/tree/master/Intro_ML_R</a></li>
       </ul>
     </p>
-  datetime: 2022-05-24 14:00:00-08:00
+  datetime: 2022-05-24 14:00:00
 
 - title: CIDR Python Introduction to Machine Learning
   description: |
@@ -45,7 +45,7 @@
         <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Intro_to_ML_with_Python">https://github.com/sul-cidr/Workshops/tree/master/Intro_to_ML_with_Python</a></li>
       </ul>
     </p>
-  datetime: 2022-05-17 14:00:00-08:00
+  datetime: 2022-05-17 14:00:00
 
 - title: CIDR R Introduction to Text Analysis
   description: |
@@ -70,7 +70,7 @@
         <li><a href="https://cengel.github.io/R-text-analysis/">https://cengel.github.io/R-text-analysis/</a></li>
       </ul>
     </p>
-  datetime: 2022-05-16 14:00:00-08:00
+  datetime: 2022-05-16 14:00:00
 
 - title: CIDR Python Introduction to Text Analysis
   description: |
@@ -94,7 +94,7 @@
         <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Text_Analysis_with_Python">https://github.com/sul-cidr/Workshops/tree/master/Text_Analysis_with_Python</a></li>
       </ul>
     </p>
-  datetime: 2022-05-10 14:00:00-08:00
+  datetime: 2022-05-10 14:00:00
 
 - title: CIDR R Visualization
   description: |
@@ -119,7 +119,7 @@
         <li><a href="https://github.com/sul-cidr/data-visualization-ggplot2">https://github.com/sul-cidr/data-visualization-ggplot2</a></li>
       </ul>
     </p>
-  datetime: 2022-05-05 14:00:00-08:00
+  datetime: 2022-05-05 14:00:00
 
 - title: CIDR R Data Wrangling
   description: |
@@ -144,7 +144,7 @@
         <li><a href="https://cengel.github.io/R-data-wrangling">https://cengel.github.io/R-data-wrangling</a></li>
       </ul>
     </p>
-  datetime: 2022-05-03 14:00:00-08:00
+  datetime: 2022-05-03 14:00:00
 
 - title: CIDR Python Visualization
   description: |
@@ -168,7 +168,7 @@
         <li><a href="https://eastbayev.github.io/SSDS-TAML/winter2022/viz.html">https://eastbayev.github.io/SSDS-TAML/winter2022/viz.html</a></li>
       </ul>
     </p>
-  datetime: 2022-04-28 14:00:00-08:00
+  datetime: 2022-04-28 14:00:00
 
 - title: CIDR Python Data Wrangling
   description: |
@@ -192,7 +192,7 @@
         <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Data_Manipulation_with_Python">https://github.com/sul-cidr/Workshops/tree/master/Data_Manipulation_with_Python</a></li>
       </ul>
     </p>
-  datetime: 2022-04-26 14:00:00-08:00
+  datetime: 2022-04-26 14:00:00
 
 - title: CIDR Introduction to R
   description: |
@@ -213,7 +213,7 @@
         <li><a href="https://cengel.github.io/R-intro">https://cengel.github.io/R-intro</a></li>
       </ul>
     </p>
-  datetime: 2022-04-19 14:00:00-08:00
+  datetime: 2022-04-19 14:00:00
 
 - title: CIDR Introduction to Python
   description: |
@@ -233,7 +233,7 @@
         <li><a href="https://github.com/sul-cidr/Workshops/tree/master/Introduction_to_Python">https://github.com/sul-cidr/Workshops/tree/master/Introduction_to_Python</a></li>
       </ul>
     </p>
-  datetime: 2022-04-12 14:00:00-08:00
+  datetime: 2022-04-12 14:00:00
 
 - title: Accessing & Analyzing Large Corpora in the HathiTrust Research Center
   description: |
@@ -242,7 +242,7 @@
       <div><strong>Contact:</strong> katebar@stanford.edu</div>
     </div>
     The HathiTrust Research Center has millions of documents scanned by Google and universities, including books, articles, and reference material. This workshop will cover how to identify documents you want to work with, pull them into an HTRC “workset”, and perform computational analysis on that workset via pre-programmed algorithms or your own code in the HTRC data capsule.
-  datetime: 2022-03-08 14:00:00-08:00
+  datetime: 2022-03-08 14:00:00
 
 - title: CIDR R Introduction to Machine Learning
   description:
@@ -258,7 +258,7 @@
     \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
     \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\
     \  </ul>"
-  datetime: 2022-03-01 14:00:00-08:00
+  datetime: 2022-03-01 14:00:00
 - title: CIDR Python Introduction to Machine Learning
   description:
     "<p>This two-part workshop series provides a gentle introduction to\
@@ -272,7 +272,7 @@
     \ Distribution 3.6+ installed before the start of the workshop: <a href=\"https://www.anaconda.com/products/individual\"\
     \ target=\"_blank\" data-cke-saved-href=\"https://www.anaconda.com/products/individual\"\
     \ rel=\"noopener\">https://www.anaconda.com/products/individual</a></li>\n</ul>"
-  datetime: 2022-02-22 14:00:00-08:00
+  datetime: 2022-02-22 14:00:00
 - title: CIDR R Introduction to Text Analysis
   description:
     "<p>Are you interested in analyzing collections of novels or journal\
@@ -290,7 +290,7 @@
     \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
     \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\
     \  </ul>"
-  datetime: 2022-02-15 14:00:00-08:00
+  datetime: 2022-02-15 14:00:00
 - title: CIDR Python Introduction to Text Analysis
   description:
     "<p>This two-part workshop series will introduce you to working with\
@@ -307,7 +307,7 @@
     \ Distribution 3.6+ installed before the start of the workshop: <a href=\"https://www.anaconda.com/products/individual\"\
     \ target=\"_blank\" data-cke-saved-href=\"https://www.anaconda.com/products/individual\"\
     \ rel=\"noopener\">https://www.anaconda.com/products/individual</a></li>\n</ul>"
-  datetime: 2022-02-08 14:00:00-08:00
+  datetime: 2022-02-08 14:00:00
 - title: CIDR R Visualization
   description:
     "<p>Data visualizations are one of the most important parts of any\
@@ -323,7 +323,7 @@
     \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
     \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\n\
     </ul>"
-  datetime: 2022-02-01 14:00:00-08:00
+  datetime: 2022-02-01 14:00:00
 - title: CIDR Python Visualization
   description:
     "<p>Data visualizations are one of the most important parts of any\
@@ -336,7 +336,7 @@
     \ workshop: <a href=\"https://www.anaconda.com/products/individual\" target=\"\
     _blank\" data-cke-saved-href=\"https://www.anaconda.com/products/individual\"\
     \ rel=\"noopener\">https://www.anaconda.com/products/individual</a></li>\n</ul>"
-  datetime: 2022-01-25 14:00:00-08:00
+  datetime: 2022-01-25 14:00:00
 - title: CIDR Introduction to R
   description:
     "<p>This introductory workshop is geared towards those who would like\
@@ -353,7 +353,7 @@
     \ target=\"_blank\" data-cke-saved-href=\"https://www.rstudio.com/products/rstudio/download/\"\
     \ rel=\"noopener\">https://www.rstudio.com/products/rstudio/download/</a></li>\n\
     </ul>"
-  datetime: 2022-01-18 14:00:00-08:00
+  datetime: 2022-01-18 14:00:00
 - title: CIDR Introduction to Python
   description:
     "<p>This workshop provides an introduction to the Python programming\
@@ -363,4 +363,4 @@
     \ Notebooks. Make sure you have Python Anaconda Distribution 3.6+ installed before\
     \ the start of the workshop: <a href=\"https://www.anaconda.com/products/individual\"\
     \ target=\"_blank\" rel=\"noopener\">https://www.anaconda.com/products/individual</a></p>"
-  datetime: 2022-01-11 14:00:00-08:00
+  datetime: 2022-01-11 14:00:00
