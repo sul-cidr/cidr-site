@@ -1,6 +1,8 @@
 ---
 import { DateTime } from "luxon";
-import events from "../data/events.yaml";
+import allEvents from "../data/events.yaml";
+
+const { type } = Astro.props;
 
 const fmt = {
   month: "long",
@@ -10,6 +12,21 @@ const fmt = {
   minute: "numeric",
   year: "numeric",
 };
+
+let events;
+
+switch (type) {
+  case "past":
+    events = allEvents.filter((event) => event.datetime < new Date());
+    break;
+
+  case "upcoming":
+    events = allEvents.filter((event) => event.datetime > new Date()).reverse();
+    break;
+
+  default:
+    events = allEvents;
+}
 ---
 
 <section>
@@ -58,6 +75,11 @@ const fmt = {
 
     :global(div.ws1 > div) {
       display: grid;
+    }
+
+    :global(div.ws1 > strong) {
+      display: block;
+      text-align: center;
     }
 
     :global(ul.ws1) {
