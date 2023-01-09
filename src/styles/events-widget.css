@@ -1,0 +1,21 @@
+/* override some localist widget styles */
+
+#events-widget .lw_event_item {
+  background-color: var(--fog-light);
+  border-radius: 8px;
+}
+
+#events-widget .lw_event_item_title__link:hover {
+  color: var(--lagunita-dark);
+}
+
+.lw_event_item_image::after {
+  background-color: var(--fog-light);
+  bottom: 0;
+  content: "";
+  left: 0;
+  mix-blend-mode: multiply;
+  position: absolute;
+  right: 0;
+  top:0;
+}
