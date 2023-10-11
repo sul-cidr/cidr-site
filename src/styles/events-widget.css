@@ -17,5 +17,14 @@
   mix-blend-mode: multiply;
   position: absolute;
   right: 0;
-  top:0;
+  top: 0;
+}
+
+#events-widget .lw.lw_view_all_cta {
+  background-color: var(--cardinal);
+  border-radius: 4px;
+}
+
+#events-widget .lw.lw_view_all_cta:hover {
+  background-color: #2e2d29; /* re-applying localist default */
 }
