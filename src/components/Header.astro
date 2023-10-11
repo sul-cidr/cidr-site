@@ -7,12 +7,7 @@ import Nav from "./Nav.astro";
 <header role="banner">
   <div>
     <a href={Astro.site.pathname}>
-      <img
-        src={cidrLogo}
-        alt="Center for Interdisciplinary Digital Research"
-        height="70"
-        width="140"
-      />
+      <img src={cidrLogo} alt="Center for Interdisciplinary Digital Research" height="70" width="140" />
     </a>
     <span>Center for Interdisciplinary Digital Research</span>
   </div>
@@ -117,10 +112,7 @@ import Nav from "./Nav.astro";
   //  (reasonable defaults are used if javascript is not available)
   const header = document.querySelector("header[role='banner']");
   const setStickyOffset = () => {
-    header.style.setProperty(
-      "--sticky-offset",
-      header.querySelector("div").getBoundingClientRect().height + "px",
-    );
+    header.style.setProperty("--sticky-offset", header.querySelector("div").getBoundingClientRect().height + "px");
   };
   window.addEventListener("load", setStickyOffset);
   window.addEventListener("resize", setStickyOffset);
