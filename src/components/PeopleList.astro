@@ -11,8 +11,8 @@ export async function parseMarkdown(toParse = "") {
 // This whole shenanigans is required to use dynamic imports in the SSR/build step.
 const images = import.meta.glob("../assets/people/*");
 for (const person of people) {
-  const { default: imagePath } = await (await images[`../assets/${person.image}`])();
-  person.imagePath = imagePath;
+  const image = await images[`../assets/${person.image}`]();
+  person.imageSrc = image.default.src;
 
   // might as well parse and render any markdown asynchronously here too,
   //  while we're at it.
@@ -33,9 +33,9 @@ for (const person of people) {
         <article set:html={person.html} />
         {(person.link && (
           <a href={person.link} class="image">
-            <img src={person.imagePath} alt={person.name} width="120" height="160" />
+            <img src={person.imageSrc} alt={person.name} width="120" height="160" />
           </a>
-        )) || <img src={person.imagePath} alt={person.name} width="120" height="160" class="image" />}
+        )) || <img src={person.imageSrc} alt={person.name} width="120" height="160" class="image" />}
       </section>
     ))
 }

@@ -7,13 +7,13 @@ import projects from "../data/projects.yaml";
 const media = import.meta.glob("../assets/projects/*");
 for (const project of projects) {
   if (project.image) {
-    const { default: imagePath } = await (await media[`../assets/${project.image}`])();
-    project.imagePath = imagePath;
+    const image = await media[`../assets/${project.image}`]();
+    project.imageSrc = image.default.src;
   }
 
   if (project.video) {
-    const { default: videoPath } = await (await media[`../assets/${project.video}`])();
-    project.videoPath = videoPath;
+    const video = await media[`../assets/${project.video}`]();
+    project.videoSrc = video.default;
   }
 
   // might as well parse and render any markdown asynchronously here too,
@@ -35,9 +35,9 @@ for (const project of projects) {
           <header>{project.title}</header>
         )}
         {project.video ? (
-          <video src={`${project.videoPath}#t=8`} loop muted />
+          <video src={`${project.videoSrc}#t=8`} loop muted />
         ) : (
-          <img src={project.imagePath} alt={project.title} />
+          <img src={project.imageSrc} alt={project.title} />
         )}
         <article set:html={project.html} />
       </section>
