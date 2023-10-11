@@ -8,6 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "lint": "astro check && prettier --check . && prettier --check **/*.astro",
     "gh-deploy": "CNAME=cidr.stanford.edu bin/astro-gh-deploy.sh"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "autoprefixer": "^10.4.16",
     "luxon": "^3.4.3",
     "postcss-nested": "^6.0.1",
+    "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.0",
     "typescript": "^5.2.2"
   },

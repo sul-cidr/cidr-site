@@ -2,5 +2,6 @@
   // Autocomplete CSS variables in VS Code
   // https://marketplace.visualstudio.com/items?itemName=phoenisx.cssvar
   "cssvar.files": ["src/styles/variables.css"],
-  "cssvar.extensions": ["css", "html", "jsx", "tsx", "astro"]
+  "cssvar.extensions": ["css", "html", "jsx", "tsx", "astro"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
