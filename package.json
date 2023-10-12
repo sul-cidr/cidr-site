@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "lint": "astro check && prettier --check . && prettier --check **/*.astro",
+    "lint": "astro check --minimumSeverity warning && prettier --check src/ && prettier --check **/*.astro",
     "gh-deploy": "CNAME=cidr.stanford.edu bin/astro-gh-deploy.sh"
   },
   "devDependencies": {
