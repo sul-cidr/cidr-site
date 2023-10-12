@@ -1,0 +1,32 @@
+---
+import "@fontsource/source-sans-pro/300.css";
+import "@fontsource/source-sans-pro/400.css";
+import "@fontsource/source-sans-pro/600.css";
+
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+let { title, redirect } = Astro.props.content || Astro.props;
+
+const content = await Astro.slots.render("default");
+---
+
+<html lang="en">
+  <Head {title} {redirect} />
+  <body>
+    <Header />
+    <main>
+      {
+        content ? (
+          <div set:html={content} />
+        ) : (
+          <div>
+            Please wait while you are redirected, or click <a href={redirect}>here</a>.
+          </div>
+        )
+      }
+    </main>
+    <Footer />
+  </body>
+</html>
