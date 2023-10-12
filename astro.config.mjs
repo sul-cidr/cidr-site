@@ -7,6 +7,7 @@ export default defineConfig({
   site: "https://cidr.stanford.edu/",
   base: "/",
   trailingSlash: "always",
+  build: { assets: "assets" },
   vite: {
     plugins: [yaml()],
   },
