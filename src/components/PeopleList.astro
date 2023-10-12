@@ -3,15 +3,24 @@ import { renderMarkdown } from "@astrojs/markdown-remark";
 
 import people from "../data/people.yaml";
 
+type Person = {
+  link: string;
+  name: string;
+  title: string;
+  html: string;
+  imageSrc: string;
+  sort: string;
+};
+
 export async function parseMarkdown(toParse = "") {
-  const output = await renderMarkdown(toParse);
+  const output = await renderMarkdown(toParse, {});
   return output.code;
 }
 
 // This whole shenanigans is required to use dynamic imports in the SSR/build step.
 const images = import.meta.glob("../assets/people/*");
 for (const person of people) {
-  const image = await images[`../assets/${person.image}`]();
+  const image = (await images[`../assets/${person.image}`]()) as { default: { src: string } };
   person.imageSrc = image.default.src;
 
   // might as well parse and render any markdown asynchronously here too,
@@ -23,8 +32,8 @@ for (const person of people) {
 
 {
   people
-    .sort((a, b) => a.sort.localeCompare(b.sort))
-    .map((person) => (
+    .sort((a: Person, b: Person) => a.sort.localeCompare(b.sort))
+    .map((person: Person) => (
       <section>
         <header>
           <h2>{(person.link && <a href={person.link}>{person.name}</a>) || person.name}</h2>

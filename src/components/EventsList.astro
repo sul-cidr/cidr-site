@@ -4,7 +4,7 @@ import allEvents from "../data/events.yaml";
 
 const { type } = Astro.props;
 
-const fmt = {
+const fmt: Intl.DateTimeFormatOptions = {
   month: "long",
   day: "numeric",
   weekday: "long",
@@ -13,15 +13,17 @@ const fmt = {
   year: "numeric",
 };
 
-let events = allEvents.sort((a, b) => b.datetime - a.datetime);
+let events = allEvents.sort(
+  (a: { datetime: Date }, b: { datetime: Date }) => b.datetime.getTime() - a.datetime.getTime(),
+);
 
 switch (type) {
   case "past":
-    events = events.filter((event) => event.datetime < new Date());
+    events = events.filter((event: { datetime: Date }) => event.datetime < new Date());
     break;
 
   case "upcoming":
-    events = events.filter((event) => event.datetime > new Date()).reverse();
+    events = events.filter((event: { datetime: Date }) => event.datetime > new Date()).reverse();
     break;
 
   default:
@@ -31,7 +33,7 @@ switch (type) {
 
 <section>
   {
-    events.map(async (event, idx) => {
+    events.map(async (event: { title: unknown; datetime: Date; description: any }, idx: number) => {
       return (
         <>
           <input type="checkbox" id={`event-${idx}`} />

@@ -3,16 +3,24 @@ import { renderMarkdown } from "@astrojs/markdown-remark";
 
 import projects from "../data/projects.yaml";
 
+type Project = {
+  link: string;
+  title: string;
+  videoSrc: string | null;
+  imageSrc: string | null;
+  html: string;
+};
+
 // This whole shenanigans is required to use dynamic imports in the SSR/build step.
 const media = import.meta.glob("../assets/projects/*");
 for (const project of projects) {
   if (project.image) {
-    const image = await media[`../assets/${project.image}`]();
+    const image = (await media[`../assets/${project.image}`]()) as { default: { src: string } };
     project.imageSrc = image.default.src;
   }
 
   if (project.video) {
-    const video = await media[`../assets/${project.video}`]();
+    const video = (await media[`../assets/${project.video}`]()) as { default: string };
     project.videoSrc = video.default;
   }
 
@@ -24,7 +32,7 @@ for (const project of projects) {
 ---
 
 {
-  projects.map(async (project) => {
+  projects.map(async (project: Project) => {
     return (
       <section>
         {project.link ? (
@@ -34,7 +42,7 @@ for (const project of projects) {
         ) : (
           <header>{project.title}</header>
         )}
-        {project.video ? (
+        {project.videoSrc ? (
           <video src={`${project.videoSrc}#t=8`} loop muted />
         ) : (
           <img src={project.imageSrc} alt={project.title} />
