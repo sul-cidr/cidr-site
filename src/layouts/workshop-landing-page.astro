@@ -1,0 +1,71 @@
+---
+import RedirectLayout from "./redirect.astro";
+
+let { title, when, redirect } = Astro.props.content || Astro.props;
+
+const content = await Astro.slots.render("default");
+---
+
+<RedirectLayout {title} {redirect}>
+  {
+    content ? (
+      <article set:html={content} />
+    ) : (
+      <article>
+        <header>
+          <h1 set:text={title} />
+          <h3 set:text={when}>
+        </header>
+        <div>
+          <p>
+            Please visit:
+            <br />
+            <a href={redirect} set:text={Astro.url} />
+          </p>
+        </div>
+      </article>
+    )
+  }
+</RedirectLayout>
+<style>
+  article {
+    background: var(--fog-light);
+    border-radius: 0.25em;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    display: grid;
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: 755px;
+    min-width: 94vw;
+    padding: 20px;
+    place-content: center;
+    text-align: center;
+  }
+
+  h1 {
+    color: var(--primary);
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-decoration-color: rgba(38, 50, 56, 0.2);
+    text-decoration: underline;
+    width: 100%;
+  }
+
+  p {
+    margin-top: 4rem;
+  }
+
+  a {
+    color: var(--cardinal);
+    font-size: min(72px, 5vw);
+    font-weight: bold;
+  }
+
+  :global(body main) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+</style>

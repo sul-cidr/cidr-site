@@ -9,13 +9,14 @@ import cidrLogo from "../assets/cidr.trsp.no-text.280x140.png";
 const commit = execSync("git rev-parse --short HEAD").toString().trim();
 const datetime = new Date().toISOString();
 
-let { title, description = siteConfig.defaultDescription } = Astro.props;
+let { title, description = siteConfig.defaultDescription, redirect } = Astro.props;
 
 title = title ? `${title} :: ${siteConfig.baseTitle}` : siteConfig.baseTitle;
 ---
 
 <head prefix="dcterms: http://purl.org/dc/terms/#">
   <meta charset="UTF-8" />
+  { redirect && <meta http-equiv="refresh" content=`0; URL=${redirect}` />}
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="description" property="og:description" content={description} />
