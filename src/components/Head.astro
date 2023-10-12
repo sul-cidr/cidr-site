@@ -1,5 +1,5 @@
 ---
-import { execSync } from "node:child_process";
+import { execSync } from "child_process";
 
 import siteConfig from "../../site-config.json";
 
@@ -25,5 +25,5 @@ title = title ? `${title} :: ${siteConfig.baseTitle}` : siteConfig.baseTitle;
   <meta name="dcterms.modified" content={datetime} />
 
   <link rel="icon" type="image/x-icon" href={`${Astro.site.pathname}favicon.ico`} />
-  <link rel="preload" href={cidrLogo} as="image" />
+  <link rel="preload" href={cidrLogo.src} as="image" />
 </head>

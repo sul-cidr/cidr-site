@@ -27,12 +27,7 @@ if (!icons[name]) {
 const { attribs = {}, svg } = icons[name];
 ---
 
-<svg
-  {...customAttribs}
-  {...attribs}
-  {...defaultAttribs}
-  class={className ? className : ""}
-  set:html={svg}></svg>
+<svg {...customAttribs} {...attribs} {...defaultAttribs} class={className ? className : ""} set:html={svg} />
 
 <style>
   :where(svg) {

@@ -13,8 +13,8 @@ The Research Data Curator collaborates heavily with the Acquisitions and Metadat
 
 Some recent data curation projects include:
 
-* [The New York Times TDM Archive](https://searchworks.stanford.edu/view/13937231)
-* [Core Logic Datasets Collection](https://searchworks.stanford.edu/view/14127292)
-* Gallup Public Opinion Polls, including [Gallup World Poll](https://searchworks.stanford.edu/view/13379512) and [Gallup Poll Social Series](https://searchworks.stanford.edu/view/14142190)
-* [L2 Voter and Demographic Dataset](https://searchworks.stanford.edu/view/12357569)
-* [Washington Post Archival Data](https://searchworks.stanford.edu/view/13718042)
+- [The New York Times TDM Archive](https://searchworks.stanford.edu/view/13937231)
+- [Core Logic Datasets Collection](https://searchworks.stanford.edu/view/14127292)
+- Gallup Public Opinion Polls, including [Gallup World Poll](https://searchworks.stanford.edu/view/13379512) and [Gallup Poll Social Series](https://searchworks.stanford.edu/view/14142190)
+- [L2 Voter and Demographic Dataset](https://searchworks.stanford.edu/view/12357569)
+- [Washington Post Archival Data](https://searchworks.stanford.edu/view/13718042)

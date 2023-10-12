@@ -4,7 +4,7 @@ import allEvents from "../data/events.yaml";
 
 const { type } = Astro.props;
 
-const fmt = {
+const fmt: Intl.DateTimeFormatOptions = {
   month: "long",
   day: "numeric",
   weekday: "long",
@@ -13,15 +13,17 @@ const fmt = {
   year: "numeric",
 };
 
-let events = allEvents.sort((a, b) => b.datetime - a.datetime);
+let events = allEvents.sort(
+  (a: { datetime: Date }, b: { datetime: Date }) => b.datetime.getTime() - a.datetime.getTime(),
+);
 
 switch (type) {
   case "past":
-    events = events.filter((event) => event.datetime < new Date());
+    events = events.filter((event: { datetime: Date }) => event.datetime < new Date());
     break;
 
   case "upcoming":
-    events = events.filter((event) => event.datetime > new Date()).reverse();
+    events = events.filter((event: { datetime: Date }) => event.datetime > new Date()).reverse();
     break;
 
   default:
@@ -31,20 +33,14 @@ switch (type) {
 
 <section>
   {
-    events.map(async (event, idx) => {
+    events.map(async (event: { title: unknown; datetime: Date; description: any }, idx: number) => {
       return (
         <>
           <input type="checkbox" id={`event-${idx}`} />
           <label for={`event-${idx}`}>
             <header>{event.title}</header>
-            <time
-              datetime={DateTime.fromJSDate(event.datetime)
-                .setZone("UTC")
-                .toFormat("yyyy-MM-dd HH:mm:ss.000")}
-            >
-              {DateTime.fromJSDate(event.datetime)
-                .setZone("UTC")
-                .toLocaleString(fmt)}
+            <time datetime={DateTime.fromJSDate(event.datetime).setZone("UTC").toFormat("yyyy-MM-dd HH:mm:ss.000")}>
+              {DateTime.fromJSDate(event.datetime).setZone("UTC").toLocaleString(fmt)}
             </time>
             <div set:html={event.description} />
           </label>
@@ -90,13 +86,7 @@ switch (type) {
 
   section::before {
     background: var(--cool-grey);
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      var(--cool-grey) 6%,
-      var(--cool-grey) 94%,
-      transparent 100%
-    );
+    background: linear-gradient(to bottom, transparent 0%, var(--cool-grey) 6%, var(--cool-grey) 94%, transparent 100%);
     content: "";
     display: block;
     height: 100%;
@@ -109,7 +99,8 @@ switch (type) {
   header,
   time {
     display: block;
-    transition: margin-right 0.2s 0.2s ease-in-out,
+    transition:
+      margin-right 0.2s 0.2s ease-in-out,
       margin-left 0.2s 0.2s ease-in-out;
     width: fit-content;
   }
@@ -139,8 +130,10 @@ switch (type) {
     margin-left: 1rem;
     padding: 0.5em;
     position: relative;
-    transition: width 0.2s 0.2s ease-in-out,
-      background-color 0.1s 0s ease-in-out, box-shadow 0.2s 0.2s ease-in-out;
+    transition:
+      width 0.2s 0.2s ease-in-out,
+      background-color 0.1s 0s ease-in-out,
+      box-shadow 0.2s 0.2s ease-in-out;
     width: calc(100% - 1rem);
     z-index: 3;
 
@@ -155,7 +148,9 @@ switch (type) {
       position: absolute;
       top: 1em;
       transform: rotate(45deg);
-      transition: transform 0.2s ease-in-out, left 0.2s 0.2s ease-in-out,
+      transition:
+        transform 0.2s ease-in-out,
+        left 0.2s 0.2s ease-in-out,
         right 0.2s 0.2s ease-in-out;
       width: 15px;
       z-index: 10;
@@ -174,13 +169,17 @@ switch (type) {
     opacity: 0;
     overflow: hidden;
     padding-top: 0.5em;
-    transition: opacity 0.2s ease-in-out, font-size 0.2s 0.2s ease-in-out;
+    transition:
+      opacity 0.2s ease-in-out,
+      font-size 0.2s 0.2s ease-in-out;
   }
 
   input:checked + label {
     background-color: var(--fog-light);
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
-    transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    transition:
+      width 0.2s ease-in-out,
+      background-color 0.2s ease-in-out,
       box-shadow 0.2s ease-in-out;
 
     header,
@@ -191,13 +190,17 @@ switch (type) {
     &::before {
       right: 1.5rem;
       transform: none;
-      transition: transform 0.2s ease-in-out, right 0.2s ease-in-out;
+      transition:
+        transform 0.2s ease-in-out,
+        right 0.2s ease-in-out;
     }
 
     & > div {
       font-size: 0.7em;
       opacity: 1;
-      transition: opacity 0.2s 0.2s ease-in-out, font-size 0.2s ease-in-out;
+      transition:
+        opacity 0.2s 0.2s ease-in-out,
+        font-size 0.2s ease-in-out;
     }
   }
 
@@ -278,7 +281,9 @@ switch (type) {
         &::before {
           left: 1.5rem;
           transform: translate(-50%, 0) rotate(0deg);
-          transition: transform 0.2s ease-in-out, left 0.2s ease-in-out;
+          transition:
+            transform 0.2s ease-in-out,
+            left 0.2s ease-in-out;
         }
 
         header,
