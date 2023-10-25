@@ -5,7 +5,7 @@ title: Consulting
 
 # Consulting @ CIDR
 
-Got an idea for a research project, but not sure what to do next? Looking for newspaper data, digitized books, or sources online that you can scrape? Struggling to keep track of all your files and code and references? Wondering how you can wrap up your project and share your materials in a reusable way? CIDR can help! Come by Green Library during the [SSDS office hours](https://library.stanford.edu/research/software-and-services-data-science/schedule-consulting-appointment), or send us an email at contact-cidr@stanford.edu. Some recent consultations have included:
+Got an idea for a research project, but not sure what to do next? Looking for newspaper data, digitized books, or sources online that you can scrape? Struggling to keep track of all your files and code and references? Wondering how you can wrap up your project and share your materials in a reusable way? CIDR can help! Send us an email at contact-cidr@stanford.edu. Some recent consultations have included:
 
 - A graduate student developed a digital map interface to use with their dissertation, but needed to figure out how to publish it. CIDR consultants helped the student take high-resolution screenshots to include in their dissertation, and advised them on how to publish a simple static site for their dissertation using GitHub pages, so that readers could interact with the map and access additional resources
 
