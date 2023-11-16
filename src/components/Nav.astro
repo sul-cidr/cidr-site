@@ -25,11 +25,7 @@ export const links = [
 <nav>
   {
     links.map(({ label, url, icon = false }) => (
-      <a
-        class={pathname === base + url ? "active" : null}
-        href={pathname === base + url ? null : base + url}
-        aria-label={icon ? label : null}
-      >
+      <a class={pathname === base + url ? "active" : null} href={base + url} aria-label={icon ? label : null}>
         {icon ? <Icon name={icon} /> : label}
       </a>
     ))
@@ -129,7 +125,7 @@ export const links = [
     height: var(--nav-item-height);
     white-space: nowrap;
 
-    &[href] {
+    &:not(.active) {
       &:after {
         background-color: var(--cardinal);
         bottom: -1px;
@@ -155,7 +151,7 @@ export const links = [
       }
     }
 
-    &:not([href]) {
+    &.active {
       color: var(--black-1);
 
       &:after {

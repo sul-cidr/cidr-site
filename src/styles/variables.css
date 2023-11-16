@@ -3,7 +3,8 @@
   --cool-grey: #53565a;
 
   --cardinal: #8c1515;
-  --lagunita-dark: #006b81;
+  /* --lagunita-dark: #006b81; */ /* The proper value for Lagunita Dark doesn't provide enough a11y contrast */
+  --lagunita-dark: #005b71;
 
   --fog: #dad7cb;
   --fog-light: #f4f4f4;
