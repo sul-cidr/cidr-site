@@ -1,11 +1,11 @@
 /* override some localist widget styles */
 
-#events-widget .lw_event_item {
+[id^="localist-widget"] .lw_event_item {
   background-color: var(--fog-light);
   border-radius: 8px;
 }
 
-#events-widget .lw_event_item_title__link:hover {
+[id^="localist-widget"] .lw_event_item_title__link:hover {
   color: var(--lagunita-dark);
 }
 
@@ -20,11 +20,11 @@
   top: 0;
 }
 
-#events-widget .lw.lw_view_all_cta {
+[id^="localist-widget"] .lw.lw_view_all_cta {
   background-color: var(--cardinal);
   border-radius: 4px;
 }
 
-#events-widget .lw.lw_view_all_cta:hover {
+[id^="localist-widget"] .lw.lw_view_all_cta:hover {
   background-color: #2e2d29; /* re-applying localist default */
 }
