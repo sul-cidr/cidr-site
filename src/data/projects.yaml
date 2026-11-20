@@ -1,13 +1,20 @@
+- title: "MIME: Machine Intelligence for Motion Exegesis"
+  text: |
+    This collaborative effort with Professor Michael Rau from the Stanford Department of Theater and Performance Studies applies computer vision-based pose and action recognition techniques to study directorial styles and other aspects of theater performances. The project's data exploration platform received the [2026 ATHE-ASTR Award for Excellence in Digital Scholarship](https://www.athe.org/page/digitalawardees).
+  image: projects/mime.322x202.png
+  video: projects/mime.webm
+  link: https://sul-cidr.github.io/mime/
+
 - title: The Pianolatron
   text: |
-    A browser-based application for interactive and historically informed playback and viewing of the more than 1,000 player piano rolls collected and digitized at the Stanford Music Library’s Archive of Recorded Sound, built through close coordination with Professor George Barth and Lecturer Kumaran Arul from the Stanford Department of Music.
+    A browser-based application for interactive and historically informed playback and viewing for hundreds of player piano rolls from the Archive of Recorded Sound collection, built through close coordination with Piano Lecturer Kumaran Arul and Professor Emeritus George Barth from the Stanford Department of Music.
   image: projects/pianolatron.322x216.png
   video: projects/pianolatron.webm
   link: https://pianolatron.stanford.edu
 
 - title: Noh as Intermedia
   text: |
-    A richly interactive exploration of how Japanese Noh theater draws on relationships between its component art forms, led by Professor Jarosław Kapuściński and Senior Lecturer François Rose from the Stanford Department of Music and Professor Fujita Takanori from the Kyoto City University of Arts. The completed site presents deep, interactive annotations of digitized performances of two exemplary plays, augmented with explanatory texts and multimedia excerpts.
+    A richly interactive exploration of how Japanese Noh theater draws on relationships between its component art forms, led by Professor Jarosław Kapuściński and Senior Lecturer François Rose from the Stanford Department of Music and Professor Fujita Takanori from the Kyoto City University of Arts. The completed site presents deep, interactive annotations of digitized performances of several exemplary plays, augmented with explanatory texts and multimedia excerpts.
   image: projects/noh-as-intermedia.jpeg
   video: projects/noh-as-intermedia.webm
   link: https://noh.stanford.edu
@@ -27,7 +34,7 @@
 
 - title: Semiotic Analysis of Test Items (SATI)
   text: |
-    An ongoing inquiry with Professor Guillermo Solano-Flores from the Stanford Graduate School of Education into the potential of using machine learning methods to augment the study of a large, internationally sourced collection of standardized test questions.
+    An inquiry with Professor Guillermo Solano-Flores from the Stanford Graduate School of Education into the potential of using machine learning methods to augment the study of a large, internationally sourced collection of standardized test questions.
   image: projects/semiotic-analysis-of-test-items.380x216.jpeg
 
 - title: The Chinese Deathscape
@@ -46,4 +53,3 @@
   text: |
     Led by Dan Edelstein and Keith Baker, a collection of resources around the French Revolution, including a searchable full-text version of [Archives parlementaires / Parliamentary archives](https://sul-philologic.stanford.edu/philologic/archparl/) and a gallery of images of the French revolution.
   image: projects/french-revolution-digital-archive.320x183.jpeg
-  link: http://frda.stanford.edu
