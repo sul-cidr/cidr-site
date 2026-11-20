@@ -14,7 +14,7 @@
 
 - title: Noh as Intermedia
   text: |
-    A richly interactive exploration of how Japanese Noh theater draws on relationships between its component art forms, led by Professor Jarosław Kapuściński and Senior Lecturer François Rose from the Stanford Department of Music and Professor Fujita Takanori from the Kyoto City University of Arts. The completed site presents deep, interactive annotations of digitized performances of two exemplary plays, augmented with explanatory texts and multimedia excerpts.
+    A richly interactive exploration of how Japanese Noh theater draws on relationships between its component art forms, led by Professor Jarosław Kapuściński and Senior Lecturer François Rose from the Stanford Department of Music and Professor Fujita Takanori from the Kyoto City University of Arts. The completed site presents deep, interactive annotations of digitized performances of several exemplary plays, augmented with explanatory texts and multimedia excerpts.
   image: projects/noh-as-intermedia.jpeg
   video: projects/noh-as-intermedia.webm
   link: https://noh.stanford.edu
@@ -34,7 +34,7 @@
 
 - title: Semiotic Analysis of Test Items (SATI)
   text: |
-    An ongoing inquiry with Professor Guillermo Solano-Flores from the Stanford Graduate School of Education into the potential of using machine learning methods to augment the study of a large, internationally sourced collection of standardized test questions.
+    An inquiry with Professor Guillermo Solano-Flores from the Stanford Graduate School of Education into the potential of using machine learning methods to augment the study of a large, internationally sourced collection of standardized test questions.
   image: projects/semiotic-analysis-of-test-items.380x216.jpeg
 
 - title: The Chinese Deathscape
