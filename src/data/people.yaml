@@ -1,32 +1,34 @@
-- name: Quinn Dombrowski
-  sort: Dombrowski
+- name: Quinn Daedal
+  sort: Daedal
   title: DLCL Academic Technology Specialist
-  image: people/quinn_dombrowski.jpg
+  image: people/quinn_daedal.jpg
+  link: https://library.stanford.edu/people/quinn-daedal
   text: |
     Quinn specializes in non-English data and natural-language processing in Python. For almost 20 years, Quinn has regularly scanned and digitized texts in a variety of languages, and often consults on issues related to OCR (optical character recognition, for printed texts) and HTR (handwritten text recognition), and metadata creation for text corpora.
 
 - name: Peter Broadwell
   sort: Broadwell
-  title: Digital Scholarship Research Developer
+  title: Head of AI Modeling & Inference
   image: people/peter_broadwell.jpg
-  link: https://library.stanford.edu/people/pmb
+  link: https://library.stanford.edu/people/peter-broadwell
   text: |
-    Part of the CIDR developer team, Peter helps to build scholarly resources through the application of machine learning, web-based visualization, and other methods of digital analysis to complex cultural, historical and sociological data.
+    Part of the CIDR developer team, Peter helps to build scholarly resources through the application of AI/machine learning, web-based visualization, and other methods of digital analysis to complex cultural, historical and sociological data.
 
 - name: Claudia Engel
   sort: Engel
   title: Anthropology Academic Technology Specialist
   image: people/claudia_engel.jpg
+  link: https://library.stanford.edu/people/claudia-engel
   text: |
     Claudia Engel collaborates with students and faculty on digital research projects in the Anthropology Department, where she also has a lecturer appointment and teaches courses on GIS and Digital Methods.
 
 - name: Vijoy Abraham
   sort: Abraham
-  title: Assistant Director and Head, CIDR
+  title: Associate University Librarian for Research Data Services
   image: people/vijoy_abraham.jpeg
-  link: https://library.stanford.edu/people/vijoy
+  link: https://library.stanford.edu/people/vijoy-abraham
   text: |
-    Vijoy Abraham is Assistant Director and Head of the Center for Interdisciplinary Digital Research where he rallies together a team of social science and humanities scholars in support of digital research projects.
+    As AUL for Research Data Services, Vijoy Abraham rallies together a team of social science and humanities scholars in support of digital research projects.
     He also works to analyze and implement new services for provisioning Stanford Libraries’ data collections to our research community through working relationships with colleagues within the Libraries and across the University’s research and data infrastructure teams.
 
 - name: Simon Wiles
@@ -40,6 +42,7 @@
   sort: McDivitt
   title: History Academic Technology Specialist
   image: people/anne_ladyem_mcdivitt.jpeg
+  link: https://library.stanford.edu/people/anne-ladyem-mcdivitt
   text: |
     Anne Ladyem McDivitt collaborates with the History Department to support their digital research, projects, and pedagogy. Anne Ladyem has a background in Digital History and specializes in digital storytelling.
 
@@ -47,5 +50,6 @@
   sort: Hahm
   title: Head of Data Science Training & Consultation
   image: people/jooyeon_hahm.jpg
+  link: https://library.stanford.edu/people/jooyeon-hahm
   text: |
     Jooyeon Hahm leads the development of resources such as workshops, tutorials, and online guides aimed at enhancing researchers' skills in applying data science methods, fostering data literacy, and ensuring the effective and ethical use of computational tools in their research.
